@@ -1,0 +1,144 @@
+// Блок Команды - Главная страница
+.team-main__top-btn {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+@include media-breakpoint-down(md)
+{
+    .team-main__top-btn {
+        bottom: 17px;
+    }
+}
+
+.team-main {
+    background-color: var(--blue-6);
+    padding: 60px 0 120px;
+    color: var(--white);
+
+    &__items {
+        margin: 0 -10px;
+    }
+    &__item {
+        margin: 0 10px 30px;
+        width: calc(25% - 20px);
+
+        h3, .h3 {
+            margin: 0 0 10px;
+        }
+    }
+    &__pict img {
+        width: 100%;
+    }
+    &__block-top {
+        background-color: rgba(36,52,107,0.93);
+        border-bottom: 2px solid var(--yellow);
+    }
+    &__box {
+        padding: 40px 10px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__num {
+        background: var(--yellow);
+        box-shadow: 0 10px 12px 0 rgba(239,119,17,.25);
+        height: 40px;
+        font-weight: 900;
+        font-size: 20px;
+        color: var(--white);
+        text-align: center;
+        line-height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+    &__name {
+        margin: 0 0 15px;
+    }
+    &__info {
+        font-size: 18px;
+        color: #EF7711;
+
+        span {
+            color: var(--white);
+            font-weight: 700;
+        }
+    }
+    &__line {
+        background-color: rgba(36,52,107,.93);
+        color: var(--linght-blue-four);
+        min-height: 50px;
+        padding: 0 15px;
+        text-transform: uppercase;
+        margin: 10px 0 0;
+    }   
+    &__count {
+        color: var(--white);
+        font-weight: 700;
+    }
+
+    .go-top {
+        display: block;
+        color: var(--white);
+
+        &:after {
+            background-image: url(img/icon.go.top.white.svg);
+        }
+    }
+}
+
+@include media-breakpoint-between(sm, md)
+{
+    .team-main {
+
+        &__item {
+            width: calc(50% - 20px);
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .team-main {
+
+        &__items {
+            margin: 0;
+        }
+        &__item {
+            width: 100%;
+            margin: 0 0 30px;
+        }
+        &__pict {
+            width: 55%;
+        }
+        &__box {
+            width: 45%;
+            padding: 0 10px;
+            text-align: right;
+        }
+        &__num {
+            left: 0;
+            top: 20px;
+        }
+        &__name {
+            font-size: 16px;
+        }
+        &__info {
+            font-size: 12px;
+
+            span {
+                font-size: 22px;
+                line-height: 22px;
+                font-weight: 400;
+            }
+        }
+        &__line {
+            margin: 1px 0 0;
+            font-size: 12px;
+        }
+    }
+}

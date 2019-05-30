@@ -1,0 +1,52 @@
+// Страница Новости - детальная
+.news-detail {
+    margin: 0 0 100px;
+
+    &__pict {
+        margin: 0 0 20px;
+    }
+    &__name {
+        font-weight: 900;
+        font-size: 30px;
+        margin: 0 0 20px;
+
+        &:before {
+            display: none;
+        }
+    }
+    &__date {
+        font-size: 13px;
+        line-height: 16px;
+        margin: 0 0 20px;
+    }
+    &__text {
+        margin: 0 0 95px;
+    }
+    &__btn-block {
+        overflow: hidden;
+    }
+}
+
+@include media-breakpoint-down(dm)
+{
+    .news-detail {
+        margin: 0 0 50px;
+
+        &__name {
+            font-size: 24px;
+            margin: 0 0 10px;
+            padding: 0;
+        }
+        &__date {
+            font-size: 12px;
+            margin: 0 0 10px;
+        }
+        &__text {
+            margin: 0 0 20px;
+        }
+        &__btn-block {
+            overflow: hidden;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+<% var data = {
+    title: "Tropic | Медиа",
+    main_block_class: ""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+    <h1>Медиа</h1>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="tab-panel">
+                <a href="javascript:;" class="tab-panel__item tab-panel__item_active">Все</a>
+                <a href="javascript:;" class="tab-panel__item">Фото</a>
+                <a href="javascript:;" class="tab-panel__item">Видео</a>
+            </div>
+        </div>
+        <div class="col-sm-6 text-right">
+            <div class="media-list__year">
+                <div class="select-title">По годам</div>
+                <label class="select-style">
+                    <select>
+                        <option value="" selected>Все</option>
+                        <option value="">2019</option>
+                        <option value="">2018</option>
+                        <option value="">2017</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="media-list">
+        <div class="media-list__items d-flex flex-wrap">
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/media.list1.jpg"
+            }; %>
+            <%= _.template(require('./../includes/media_video_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание",
+                pict: "local/uploads/media.list2.jpg"
+            }; %>
+            <%= _.template(require('./../includes/media_pict_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/media.list3.jpg"
+            }; %>
+            <%= _.template(require('./../includes/media_pict_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание",
+                pict: "local/uploads/media.list1.jpg"
+            }; %>
+            <%= _.template(require('./../includes/media_pict_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/media.list2.jpg"
+            }; %>
+            <%= _.template(require('./../includes/media_pict_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/media.list3.jpg"
+            }; %>
+            <%= _.template(require('./../includes/media_video_item.html'))(data_item) %>
+        </div>
+        <div class="media-list__btn-block">
+            <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
+        </div>
+    </div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

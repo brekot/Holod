@@ -1,0 +1,137 @@
+// Блок Турнирная таблица
+.standings-block {
+    padding: 0 0 50px;
+
+    &__table {
+        width: 100%;
+        background-color: var(--white);
+
+        & thead {
+            background-color: var(--linght-blue-three);
+            border-top: 2px solid var(--yellow);
+
+            & tr {
+                height: 46px;
+            }
+        }
+        & tbody {
+
+            & tr {
+                height: 60px;
+            }
+        }
+        & th {
+            color: var(--gray-500);
+            font-weight: 400;
+        }
+        & th,
+        & td {
+
+            &:nth-child(1) {
+                padding: 0 50px;
+                text-align: center;
+                width: 130px;
+            }
+            &:nth-child(2) {
+                padding: 0 30px 0 0;
+                width: 70px;
+            }
+        }
+        & td {
+
+            &:nth-child(3) {
+                color: var(--blue-1);
+            }
+        }
+    }
+    &__tr-bold {
+        font-weight: 700;
+    }
+    &__num {
+        border: 1px solid var(--yellow);
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 28px;
+    }
+    &__pict {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    &__btn-block {
+        text-align: center;
+        margin: 50px 0 0;
+    }
+}
+
+@include media-breakpoint-up(md)
+{
+    .standings-block {
+
+        &__table {
+
+            & tbody {
+
+                & tr {
+
+                    &:first-child td {
+                        padding-top: 30px;
+                        height: 90px;
+                    }
+                    &:last-child td {
+                        padding-bottom: 30px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .standings-block {
+
+        &__table {
+
+            & td,
+            & th {
+
+                &:nth-child(1) {
+                    padding: 0 20px;
+                    width: 70px;
+                }
+                &:nth-child(2),
+                &:nth-child(8) {
+                    display: none;
+                }
+            }
+            & tbody {
+
+                & tr {
+                    height: 40px;
+                }
+            }
+        }
+        &__tr-bold {
+            color: var(--white);
+            background-color: var(--yellow);
+
+            & td:nth-child(3) {
+                color: var(--white);
+            }
+        }
+        &__btn-block {
+            text-align: center;
+            margin: 20px 0 0;
+        }
+    }
+}
+@include media-breakpoint-down(xs)
+{
+    .standings-block {
+        margin: 0 -15px;
+    }
+}

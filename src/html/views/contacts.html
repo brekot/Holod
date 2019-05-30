@@ -1,0 +1,38 @@
+<% var data = {
+    title: "Tropic | Контакты",
+    main_block_class: "main-main_no-padding-bottom main-main_hide-go-top"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+    <h1>Контакты</h1>
+    <div class="contacts-page">
+        <div class="row">
+            <div class="col-md-6">
+                <b>Администратор команды ХК "Тропик":</b><br>
+                Гуляев Роман Валерьевич<br>
+                Телефон: <a href="tel:+79997759199">+7 (999) 775-91-99</a><br>
+                Почта: <a href="mailto:gulyaev.r@arena-tropic.ru">gulyaev.r@arena-tropic.ru</a>
+            </div>
+            <div class="col-md-6 text-md-right contacts-page__right">
+                <b>Реклама:</b><br>
+                Пермякова Юлия Викторовна<br>
+                Телефон: <a href="tel:+79105550812">+7 (910) 555-08-12</a><br>
+                Почта: <a href="mailto:permyakova.u@arena-tropic.ru">permyakova.u@arena-tropic.ru</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div>
+
+    <div class="contacts-map">
+        <div class="contacts-map__addr">
+            <div class="container">
+                <div class="contacts-map__addr-text">
+                    Адрес: 300045, г. Тула, ул. Демьянова, д.26-Б Ледовая арена "Тропик"
+                </div>
+            </div>
+        </div>
+    </div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

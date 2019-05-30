@@ -1,0 +1,46 @@
+// Страница Контакты
+.contacts-page {
+    margin: 0 0 50px;
+}
+
+// Страница Контакты - карта
+.contacts-map {
+    //background: url(uploads/map.jpg) no-repeat center / cover;
+    height: 670px;
+    position: relative;
+
+    &__addr {
+        //box-shadow: 0 10px 25px 0 rgba(44,62,122,.1);
+        left: 0;
+        right: 0;
+        top: 30px;
+        position: absolute;
+    }
+    &__addr-text {
+        box-shadow: 0 10px 25px 0 rgba(44,62,122,.1);
+        background: var(--light);
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+@include media-breakpoint-down(sm)
+{
+    .contacts-page {
+        margin: 0 0 30px;
+
+        &__right {
+            margin: 30px 0 0;
+        }
+    }
+    .contacts-map {
+        height: 375px;
+
+        &__addr-text {
+            font-size: 12px;
+            line-height: 24px;
+            padding: 20px 15px;
+        }
+    }
+}

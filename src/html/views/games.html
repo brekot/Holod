@@ -1,0 +1,432 @@
+<% var data = {
+    title: "Tropic | Матчи",
+    main_block_class: ""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+    <h1>Матчи</h1>
+
+    <div class="position-relative d-none d-md-block">
+        <div class="games-page__top-btn">
+            <a href="javascript:;" class="btn btn-secondary">Показать все матчи</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="tab-panel tab-panel_big">
+                <a href="javascript:;" class="tab-panel__item tab-panel__item_active">Все</a>
+                <a href="javascript:;" class="tab-panel__item">Прошедшие</a>
+                <a href="javascript:;" class="tab-panel__item">Будущие</a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 text-center d-none d-md-block">
+            <div class="select-year d-flex align-items-center justify-content-between">
+                <a class="select-year__str select-year__str_left" href="javascript:;"></a>
+                <span class="select-year_name">Сентябрь</span>
+                <a class="select-year__str select-year__str_right" href="javascript:;"></a>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-4 text-right">
+            <div class="tab-panel-select tab-panel-select_big">
+                <a href="javascript:;" class="tab-panel-select__item tab-panel-select__item_active">
+                    <span>Все турниры</span>
+                </a>
+                <div class="tab-panel-select__items">
+                    <a href="javascript:;" class="tab-panel-select__item">
+                        <span>НХЛ Любитель 40+ Название в Три Строки</span>
+                    </a>
+                    <a href="javascript:;" class="tab-panel-select__item">
+                        <span>НХЛ Любитель 40+ Название в Три Строки</span>
+                    </a>
+                    <a href="javascript:;" class="tab-panel-select__item">
+                        <span>НХЛ Любитель 40+</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-panel-select tab-panel-select_big">
+                <a href="javascript:;" class="tab-panel-select__item tab-panel-select__item_active">
+                    <span>НХЛ Любитель 40+ Название в Три Строки</span>
+                </a>
+                <div class="tab-panel-select__items">
+                    <a href="javascript:;" class="tab-panel-select__item">
+                        <span>НХЛ Любитель 40+ Название в Три Строки</span>
+                    </a>
+                    <a href="javascript:;" class="tab-panel-select__item">
+                        <span>НХЛ Любитель 40+ Название в Три Строки</span>
+                    </a>
+                    <a href="javascript:;" class="tab-panel-select__item">
+                        <span>НХЛ Любитель 40+</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="games-page d-none d-md-block">
+        <div class="d-flex align-items-center justify-content-between games-page__line games-page__line_lost">
+            <div class="games-page__date">
+                01.01.2019
+            </div>
+            <div class="games-page__time">
+                18:00
+            </div>
+            <div class="games-page__team">
+                <span class="games-page__name games-page__name_left">«Тропик»</span>
+                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
+            </div>
+            <div class="games-page__score">
+                - : -
+            </div>
+            <div class="games-page__team">
+                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
+                <span class="games-page__name games-page__name_right">«Длинное название Команды»</span>
+            </div>
+            <div class="games-page__place">
+                НХЛ Любитель 40+ Название в Три Строки
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between games-page__line games-page__line_lost">
+            <div class="games-page__date">
+                31.12.2018
+            </div>
+            <div class="games-page__time">
+                16:00
+            </div>
+            <div class="games-page__team">
+                <span class="games-page__name games-page__name_left">«Длинное название Команды»</span>
+                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
+            </div>
+            <div class="games-page__score">
+                - : -
+            </div>
+            <div class="games-page__team">
+                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
+                <span class="games-page__name games-page__name_right">«Белые медведи»</span>
+            </div>
+            <div class="games-page__place">
+                НХЛ Любитель 40+ Название в Три Строки
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between games-page__line">
+            <div class="games-page__date">
+                01.01.2019
+            </div>
+            <div class="games-page__time">
+                18:00
+            </div>
+            <div class="games-page__team">
+                <span class="games-page__name games-page__name_left">«Тропик»</span>
+                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
+            </div>
+            <div class="games-page__score">
+                - : -
+            </div>
+            <div class="games-page__team">
+                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
+                <span class="games-page__name games-page__name_right">«Длинное название Команды»</span>
+            </div>
+            <div class="games-page__place">
+                НХЛ Любитель 40+ Название в Три Строки
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between games-page__line">
+            <div class="games-page__date">
+                31.12.2018
+            </div>
+            <div class="games-page__time">
+                16:00
+            </div>
+            <div class="games-page__team">
+                <span class="games-page__name games-page__name_left">«Длинное название Команды»</span>
+                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
+            </div>
+            <div class="games-page__score">
+                - : -
+            </div>
+            <div class="games-page__team">
+                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
+                <span class="games-page__name games-page__name_right">«Белые медведи»</span>
+            </div>
+            <div class="games-page__place">
+                НХЛ Любитель 40+ Название в Три Строки
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between games-page__line">
+            <div class="games-page__date">
+                01.01.2019
+            </div>
+            <div class="games-page__time">
+                18:00
+            </div>
+            <div class="games-page__team">
+                <span class="games-page__name games-page__name_left">«Тропик»</span>
+                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
+            </div>
+            <div class="games-page__score">
+                - : -
+            </div>
+            <div class="games-page__team">
+                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
+                <span class="games-page__name games-page__name_right">«Длинное название Команды»</span>
+            </div>
+            <div class="games-page__place">
+                НХЛ Любитель 40+ Название в Три Строки
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between games-page__line">
+            <div class="games-page__date">
+                31.12.2018
+            </div>
+            <div class="games-page__time">
+                16:00
+            </div>
+            <div class="games-page__team">
+                <span class="games-page__name games-page__name_left">«Длинное название Команды»</span>
+                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
+            </div>
+            <div class="games-page__score">
+                - : -
+            </div>
+            <div class="games-page__team">
+                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
+                <span class="games-page__name games-page__name_right">«Белые медведи»</span>
+            </div>
+            <div class="games-page__place">
+                НХЛ Любитель 40+ Название в Три Строки
+            </div>
+        </div>
+        <div class="games-page__btn-block">
+            <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
+        </div>
+    </div>
+
+    <div class="games-page-mobile d-md-none">
+        <div class="games-page-mobile__item games-page-mobile__item_lost">
+            <div class="games-page-mobile__info d-flex justify-content-between">
+                <div class="games-page-mobile__time">
+                    01.01.2019<br>
+                    18:00
+                </div>
+                <div class="games-page-mobile__place">
+                    НХЛ Любитель 40+ Название в Три Строки
+                </div>
+            </div>
+            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon1.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Тропик»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="games-page-mobile__line d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon2.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Длинное название Команды»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="games-page-mobile__item games-page-mobile__item_lost">
+            <div class="games-page-mobile__info d-flex justify-content-between">
+                <div class="games-page-mobile__time">
+                    01.01.2019<br>
+                    18:00
+                </div>
+                <div class="games-page-mobile__place">
+                    НХЛ Любитель 40+ Название в Три Строки
+                </div>
+            </div>
+            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon1.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Тропик»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="games-page-mobile__line d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon2.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Длинное название Команды»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="games-page-mobile__item">
+            <div class="games-page-mobile__info d-flex justify-content-between">
+                <div class="games-page-mobile__time">
+                    01.01.2019<br>
+                    18:00
+                </div>
+                <div class="games-page-mobile__place">
+                    НХЛ Любитель 40+ Название в Три Строки
+                </div>
+            </div>
+            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon1.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Тропик»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="games-page-mobile__line d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon2.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Длинное название Команды»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="games-page-mobile__item">
+            <div class="games-page-mobile__info d-flex justify-content-between">
+                <div class="games-page-mobile__time">
+                    01.01.2019<br>
+                    18:00
+                </div>
+                <div class="games-page-mobile__place">
+                    НХЛ Любитель 40+ Название в Три Строки
+                </div>
+            </div>
+            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon1.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Тропик»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="games-page-mobile__line d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon2.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Длинное название Команды»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="games-page-mobile__item">
+            <div class="games-page-mobile__info d-flex justify-content-between">
+                <div class="games-page-mobile__time">
+                    01.01.2019<br>
+                    18:00
+                </div>
+                <div class="games-page-mobile__place">
+                    НХЛ Любитель 40+ Название в Три Строки
+                </div>
+            </div>
+            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon1.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Тропик»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="games-page-mobile__line d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon2.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Длинное название Команды»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="games-page-mobile__item">
+            <div class="games-page-mobile__info d-flex justify-content-between">
+                <div class="games-page-mobile__time">
+                    01.01.2019<br>
+                    18:00
+                </div>
+                <div class="games-page-mobile__place">
+                    НХЛ Любитель 40+ Название в Три Строки
+                </div>
+            </div>
+            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon1.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Тропик»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="games-page-mobile__line d-flex align-items-center">
+                <div class="games-page-mobile__pict">
+                    <img src="local/uploads/games.icon2.png" alt="">
+                </div>
+                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
+                    <div class="games-page-mobile__name">
+                        «Длинное название Команды»
+                    </div>
+                    <div class="games-page-mobile__score">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="games-page-mobile__btn-block">
+            <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
+        </div>
+    </div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

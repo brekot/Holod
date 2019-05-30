@@ -1,0 +1,42 @@
+<% var data = {
+    title: "Tropic | Новости",
+    main_block_class: ""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+    <div class="h2">Новости</div>
+
+    <div class="news-detail">
+        <img src="local/uploads/news.detail.jpg" alt="" class="news-detail__pict">
+        <h1 class="news-detail__name">Финал НХЛ</h1>
+        <div class="news-detail__date">11:00 01.01.2018</div>
+        <div class="news-detail__text">Уже в это воскресенье первый финальный матч ночной хоккейной лиги Тульской области! На льду серьезные соперники — шестикратный чемпион НХЛ «Тропик» против «Факела» г. Алексин. «Факел» — принципиальный соперник. Матч обещает быть жарким</div>
+        <div class="news-detail__btn-block">
+            <a href="javascript:;" class="btn btn-secondary btn-prev">Предыдующая новость</a>
+            <a href="javascript:;" class="btn btn-secondary btn-next">Следующая новость</a>
+        </div>
+    </div>
+
+    <div class="h2">Последние Новости</div>
+
+    <div class="news-list">
+        <div class="news-list__items d-flex flex-wrap">
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/news.list1.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/news.list2.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание",
+                pict: "local/uploads/news.list3.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+        </div>
+    </div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

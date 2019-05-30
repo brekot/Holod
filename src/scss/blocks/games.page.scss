@@ -1,0 +1,166 @@
+// Страница Матчи
+.games-page__top-btn {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+@include media-breakpoint-only(md)
+{
+    .games-page__top-btn {
+        bottom: 17px;
+    }
+}
+
+.games-page {
+
+    &_margin {
+        margin: 0 0 100px;
+    }
+    &__line {
+        background-color: var(--white);
+        min-height: 100px;
+        padding: 0 20px;
+        border-left: 5px solid var(--white);
+        margin: 0 0 10px;
+
+        &_lost {
+            background-color: var(--linght-blue-three);
+            border-color: var(--blue-5);
+        }
+    }
+    &__date,
+    &__time {
+        color: var(--gray-500);
+    }
+    &__team {
+        width: 205px;
+        font-size: 0;
+    }
+    &__name {
+        font-weight: bold;
+        display: inline-block;
+        width: calc(100% - 60px);
+        vertical-align: middle;
+        font-size: 14px;
+
+        &_left {
+            text-align: right;
+            margin: 0 20px 0 0;
+        }
+        &_right {
+            margin: 0 0 0 20px;
+        }
+    }
+    &__pict {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    &__score {
+        font-weight: 900;
+        font-size: 22px;
+        text-align: center;
+        width: 45px;
+    }
+    &__place {
+        width: 135px;
+        text-align: center;
+    }
+
+    &__btn-block {
+        text-align: center;
+        margin: 50px 0 0;
+    }
+}
+
+@include media-breakpoint-up(lg)
+{
+    .games-page {
+
+        &__date {
+            margin: 0 0 0 30px;
+        }
+    }
+}
+@include media-breakpoint-only(md)
+{
+    .games-page {
+
+        &__line {
+            padding: 0 10px;
+        }
+        &__team {
+            width: 150px;
+        }
+        &__name {
+
+            &_left {
+                margin: 0 10px 0 0;
+            }
+            &_right {
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+}
+
+.games-page-mobile {
+
+    &_margin {
+        margin: 0 0 50px;
+    }
+    &__item {
+        background-color: var(--white);
+        padding: 20px;
+        border-left: 5px solid var(--white);
+        margin: 0 0 10px;
+
+        &_lost {
+            background-color: var(--linght-blue-three);
+            border-color: var(--blue-5);
+        }
+    }
+    &__info {
+        color: var(--gray-500);
+        font-size: 12px;
+        margin: 0 0 10px;
+    }
+    &__time {}
+    &__place {
+        width: 130px;
+        text-align: right;
+    }
+    &__pict {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    &__team {
+        margin: 0 0 0 25px;
+        width: calc(100% - 55px);
+        font-weight: 700;
+    }
+    &__line_first {
+        margin: 0 0 10px;
+
+        & .games-page-mobile__pict {
+            margin: 0 0 10px;
+        }
+        & .games-page-mobile__team {
+            padding: 0 0 10px;
+            border-bottom: 1px solid var(--gray-300);
+        }
+    }
+    &__name {
+        max-width: 200px;
+    }
+    &__score {
+        font-size: 18px;
+    }
+
+    &__btn-block {
+        text-align: center;
+        margin: 50px 0 0;
+    }
+}

@@ -1,0 +1,74 @@
+<% var data = {
+    title: "Tropic | История",
+    main_block_class: ""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+    <h1>История</h1>
+
+    <div class="tab-panel d-none d-md-block">
+        <a href="javascript:;" class="tab-panel__item tab-panel__item_active">2012-13</a>
+        <a href="javascript:;" class="tab-panel__item">2013-14</a>
+        <a href="javascript:;" class="tab-panel__item">2014-15</a>
+        <a href="javascript:;" class="tab-panel__item">2015-16</a>
+        <a href="javascript:;" class="tab-panel__item">2016-17</a>
+        <a href="javascript:;" class="tab-panel__item">2017-18</a>
+        <a href="javascript:;" class="tab-panel__item">2018-19</a>
+    </div>
+
+    <div class="tab-panel-select d-md-none">
+        <a href="javascript:;" class="tab-panel-select__item tab-panel-select__item_active">
+            <span>2012-13</span>
+        </a>
+        <div class="tab-panel-select__items">
+            <a href="javascript:;" class="tab-panel-select__item">2013-14</a>
+            <a href="javascript:;" class="tab-panel-select__item">2014-15</a>
+            <a href="javascript:;" class="tab-panel-select__item">2015-16</a>
+            <a href="javascript:;" class="tab-panel-select__item">2016-17</a>
+            <a href="javascript:;" class="tab-panel-select__item">2017-18</a>
+            <a href="javascript:;" class="tab-panel-select__item">2018-19</a>
+        </div>
+    </div>
+
+    <div class="history-page">
+        <div class="history-page__short-text">
+            Ночная Хоккейная Лига, Дивизион 40+, лига Чемпионов, чемпион и   кубка отборочного первого этапа Тульской области 2012 год турнир в Финляндии Team Botnia Cup, чемпион и обладатель кубка
+        </div>
+        <hr class="d-md-none">
+        <img src="local/uploads/history.big.jpg" alt="" class="history-page__pict-big">
+        <div class="history-page__full-text">
+            <p>
+                <b>Участие ХК Тропик в чемпионатах</b>
+            </p>
+            <p>Хоккейная команда «Тропик» была основана в 2010 году, ООО «Группа Тропик» импортером свежих овощей и фруктов в Россию.</p>
+            <p>Команда была задумана для корпоративного отдыха и занятием спортом сотрудников компании. В скором времени команда, несмотря на любительский статус, превратилась в профессионально организованный коллектив, со своей системой подготовки под руководством квалифицированного тренера, с организацией учебно-тренировочного процесса и спортивных сборов.</p>
+            <p>История хк «Тропик» неразрывна, связана со становлением и развитием хоккея в Туле и области. Тропик единственная команда принимавшая участие во всех сезонах Ночной Хоккейной Лиги, становилась 6-ти кратным чемпионом Тульской области. Наш коллектив оказывался в числе призеров международных турниров проходящих в Чехии, Финляндии, становилась обладателем кубков ОМХЛ.</p>
+
+            <div class="pict-block">
+                <div class="row no-gutters pict-block__top">
+                    <div class="pict-block__pict">
+                        <img src="local/uploads/history.small.jpg" alt="">
+                    </div>
+                    <div class="pict-block__text">
+                        <div class="pict-block__inner">
+                            Тренером команды до 1 июня 2015 года являлся Борисов Сергей Александрович, в прошлом работавший с командами «Спартак» Москва, «Амур» Хабаровск, Сборная Литвы, командами ВХЛ.
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters pict-block__bottom align-items-end">
+                    <div class="pict-block__text order-2 order-md-1">
+                        <div class="pict-block__inner">
+                            В данный момент тренером команды является Давыдкин Николай Степанович. Под его руководством были такие команды, как «Химик» Воскресенск, «Молот-Прикамье» Перьм и другие команды ВХЛ.
+                        </div>
+                    </div>
+                    <div class="pict-block__pict order-1 order-md-2">
+                        <img src="local/uploads/history.small.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <p>На сегодняшний день, хоккейная команда «Тропик» состоит из людей разных возрастов, различных профессий, жизненных интересов и приоритетов, но объединяет их одно – это любовь к хоккею. Несмотря на то, что все игроки - рабочие люди, имеющие семьи и заботы, они находят время и силы для оттачивания индивидуального мастерства и отработки командных действий на тренировках, чтобы после выложиться на поле, порадовать болельщиков, родных и близких. Своим примером привить любовь к спорту у подрастающего поколения, чтобы они смогли стать частичкой этого великого вида спорта – хоккей!</p>
+        </div>
+    </div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

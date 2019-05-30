@@ -1,0 +1,61 @@
+<% var data = {
+    title: "Tropic | Новости",
+    main_block_class: ""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+    <h1>Новости</h1>
+
+    <div class="position-relative">
+        <div class="news-list__year">
+            <div class="select-title">По годам</div>
+            <label class="select-style">
+                <select>
+                    <option value="" selected>Все</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                </select>
+            </label>
+        </div>
+    </div>
+
+    <div class="news-list">
+        <div class="news-list__items d-flex flex-wrap">
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/news.list1.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание",
+                pict: "local/uploads/news.list2.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/news.list3.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание",
+                pict: "local/uploads/news.list1.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/news.list2.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+            <% var data_item = {
+                name: "Примерно вот такое описание в две строки",
+                pict: "local/uploads/news.list3.jpg"
+            }; %>
+            <%= _.template(require('./../includes/news_list_item.html'))(data_item) %>
+        </div>
+        <div class="news-list__btn-block">
+            <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
+        </div>
+    </div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,21 @@
+.banner-block {
+    margin: 0 0 100px;
+    max-width: 100%;
+    overflow: hidden;
+
+    &__pict {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 1000px;
+        max-height: 100%;
+    }
+}
+
+@include media-breakpoint-down(sm)
+{
+    .banner-block {
+        margin: 0 0 50px;
+        height: 50px;
+    }
+}

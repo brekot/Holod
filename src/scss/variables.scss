@@ -1,0 +1,38 @@
+$orange: #FF540D;
+$yellow: #EF7711;
+$light: #F4F7FF;
+$gray-dark: #333;
+
+:root {
+    --blue-1: #213780;
+    --blue-2: #195BA7;
+    --blue-3: #253466;
+    --blue-4: #384981;
+    --blue-5: #1d3c7d;
+    --blue-6: #2C3D75;
+    --blue-7: #6C7CB0;
+
+    --linght-blue-one: #A7B0CC;
+    --linght-blue-two: #F1F4FF;
+    --linght-blue-three: #FAFBFF;
+    --linght-blue-four: #BBC7ED;
+
+    --gray-300: #dee2e6;
+    --gray-500: #999;
+    --gray-900: #262626;
+}
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 1022px,
+    xl: 1022px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 990px,
+    xl: 990px
+);
