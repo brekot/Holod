@@ -92,7 +92,7 @@ const config = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "./local/template_styles.css"
+            filename: "./local/css/styles.css"
         }),
         new CopyWebpackPlugin([
             {

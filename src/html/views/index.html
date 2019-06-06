@@ -1,790 +1,374 @@
 <% var data = {
-    title: "Tropic | Главная",
-    main_block_class: "main-main_no-padding-bottom main-main_hide-go-top"
+    title: "Holod | Главная"
 }; %>
-<%= _.template(require('./../includes/header.html'))(data) %>
+<%= _.template(require('./../includes/header.html'))(data)
+%>
 
-    <div class="h2">
-        Последние <br class="d-sm-none">новости
-    </div>
-
-    <div class="position-relative">
-        <div class="news-main__top-btn">
-            <a href="javascript:;" class="btn btn-secondary">Показать все новости</a>
-        </div>
-    </div>
-
-    <div class="news-main">
-        <div class="row no-gutters justify-content-between">
-            <div class="news-main-big">
-                <a href="/news_detail.html" class="news-main-big__item">
-                    <div class="news-main-big__pict">
-                        <img src="local/uploads/news.main.big.jpg" alt="">
-                    </div>
-                    <div class="news-main-big__box font-condensed">
-                        <div class="news-main-big__name">
-                            Финал НХЛ
-                        </div>
-                        <div class="news-main-big__prev">
-                            Уже в это воскресенье первый финальн ый матч ночной хоккейной лиги Тульской области! На льду серьезные соперники — шестикратный чемпион НХЛ «Тропик» против «Факела» г. Алексин.
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="news-main-items d-sm-flex justify-content-between d-lg-block">
-                <div class="news-main-small">
-                    <a href="/news_detail.html" class="news-main-small__item">
-                        <div class="news-main-small__pict">
-                            <img src="local/uploads/news.main.small1.jpg" alt="">
-                        </div>
-                        <div class="news-main-small__box font-condensed">
-                            <div class="news-main-small__name">
-                                Примерно вот такое описание в две строки
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="news-main-small">
-                    <a href="/news_detail.html" class="news-main-small__item">
-                        <div class="news-main-small__pict">
-                            <img src="local/uploads/news.main.small2.jpg" alt="">
-                        </div>
-                        <div class="news-main-small__box font-condensed">
-                            <div class="news-main-small__name">
-                                Примерно вот такое описание в две строки
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="news-main-small">
-                    <a href="/news_detail.html" class="news-main-small__item">
-                        <div class="news-main-small__pict">
-                            <img src="local/uploads/news.main.small3.jpg" alt="">
-                        </div>
-                        <div class="news-main-small__box font-condensed">
-                            <div class="news-main-small__name">
-                                Примерно вот такое описание в две строки
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="banner-block">
-        <a href="javascript:;">
-            <img class="banner-block__pict" src="local/uploads/banner.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="h2">Матчи</div>
-
-    <div class="position-relative d-none d-md-block">
-        <div class="games-page__top-btn">
-            <a href="javascript:;" class="btn btn-secondary">Показать все матчи</a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-5">
-            <div class="tab-panel tab-panel_big">
-                <a href="javascript:;" class="tab-panel__item tab-panel__item_active">Все</a>
-                <a href="javascript:;" class="tab-panel__item">Прошедшие</a>
-                <a href="javascript:;" class="tab-panel__item">Будущие</a>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 text-center d-none d-md-block">
-            <div class="select-year d-flex align-items-center justify-content-between">
-                <a class="select-year__str select-year__str_left" href="javascript:;"></a>
-                <span class="select-year_name">Сентябрь</span>
-                <a class="select-year__str select-year__str_right" href="javascript:;"></a>
-            </div>
-        </div>
-        <div class="col-lg-5 col-md-4 text-right">
-            <div class="tab-panel-select tab-panel-select_big">
-                <a href="javascript:;" class="tab-panel-select__item tab-panel-select__item_active">
-                    <span>Все турниры</span>
-                </a>
-                <div class="tab-panel-select__items">
-                    <a href="javascript:;" class="tab-panel-select__item">
-                        <span>НХЛ Любитель 40+ Название в Три Строки</span>
-                    </a>
-                    <a href="javascript:;" class="tab-panel-select__item">
-                        <span>НХЛ Любитель 40+ Название в Три Строки</span>
-                    </a>
-                    <a href="javascript:;" class="tab-panel-select__item">
-                        <span>НХЛ Любитель 40+</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="games-page games-page_margin d-none d-md-block">
-        <div class="d-flex align-items-center justify-content-between games-page__line games-page__line_lost">
-            <div class="games-page__date">
-                01.01.2019
-            </div>
-            <div class="games-page__time">
-                18:00
-            </div>
-            <div class="games-page__team">
-                <span class="games-page__name games-page__name_left">«Тропик»</span>
-                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
-            </div>
-            <div class="games-page__score">
-                - : -
-            </div>
-            <div class="games-page__team">
-                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
-                <span class="games-page__name games-page__name_right">«Длинное название Команды»</span>
-            </div>
-            <div class="games-page__place">
-                НХЛ Любитель 40+ Название в Три Строки
-            </div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between games-page__line games-page__line_lost">
-            <div class="games-page__date">
-                31.12.2018
-            </div>
-            <div class="games-page__time">
-                16:00
-            </div>
-            <div class="games-page__team">
-                <span class="games-page__name games-page__name_left">«Длинное название Команды»</span>
-                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
-            </div>
-            <div class="games-page__score">
-                - : -
-            </div>
-            <div class="games-page__team">
-                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
-                <span class="games-page__name games-page__name_right">«Белые медведи»</span>
-            </div>
-            <div class="games-page__place">
-                НХЛ Любитель 40+ Название в Три Строки
-            </div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between games-page__line">
-            <div class="games-page__date">
-                01.01.2019
-            </div>
-            <div class="games-page__time">
-                18:00
-            </div>
-            <div class="games-page__team">
-                <span class="games-page__name games-page__name_left">«Тропик»</span>
-                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
-            </div>
-            <div class="games-page__score">
-                - : -
-            </div>
-            <div class="games-page__team">
-                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
-                <span class="games-page__name games-page__name_right">«Длинное название Команды»</span>
-            </div>
-            <div class="games-page__place">
-                НХЛ Любитель 40+ Название в Три Строки
-            </div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between games-page__line">
-            <div class="games-page__date">
-                31.12.2018
-            </div>
-            <div class="games-page__time">
-                16:00
-            </div>
-            <div class="games-page__team">
-                <span class="games-page__name games-page__name_left">«Длинное название Команды»</span>
-                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
-            </div>
-            <div class="games-page__score">
-                - : -
-            </div>
-            <div class="games-page__team">
-                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
-                <span class="games-page__name games-page__name_right">«Белые медведи»</span>
-            </div>
-            <div class="games-page__place">
-                НХЛ Любитель 40+ Название в Три Строки
-            </div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between games-page__line">
-            <div class="games-page__date">
-                01.01.2019
-            </div>
-            <div class="games-page__time">
-                18:00
-            </div>
-            <div class="games-page__team">
-                <span class="games-page__name games-page__name_left">«Тропик»</span>
-                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
-            </div>
-            <div class="games-page__score">
-                - : -
-            </div>
-            <div class="games-page__team">
-                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
-                <span class="games-page__name games-page__name_right">«Длинное название Команды»</span>
-            </div>
-            <div class="games-page__place">
-                НХЛ Любитель 40+ Название в Три Строки
-            </div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between games-page__line">
-            <div class="games-page__date">
-                31.12.2018
-            </div>
-            <div class="games-page__time">
-                16:00
-            </div>
-            <div class="games-page__team">
-                <span class="games-page__name games-page__name_left">«Длинное название Команды»</span>
-                <img class="games-page__pict" src="local/uploads/games.icon1.png" alt="">
-            </div>
-            <div class="games-page__score">
-                - : -
-            </div>
-            <div class="games-page__team">
-                <img class="games-page__pict" src="local/uploads/games.icon2.png" alt="">
-                <span class="games-page__name games-page__name_right">«Белые медведи»</span>
-            </div>
-            <div class="games-page__place">
-                НХЛ Любитель 40+ Название в Три Строки
-            </div>
-        </div>
-        <div class="games-page__btn-block">
-            <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
-        </div>
-    </div>
-
-    <div class="games-page-mobile games-page-mobile_margin d-md-none">
-        <div class="games-page-mobile__item games-page-mobile__item_lost">
-            <div class="games-page-mobile__info d-flex justify-content-between">
-                <div class="games-page-mobile__time">
-                    01.01.2019<br>
-                    18:00
-                </div>
-                <div class="games-page-mobile__place">
-                    НХЛ Любитель 40+ Название в Три Строки
-                </div>
-            </div>
-            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon1.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Тропик»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        1
-                    </div>
-                </div>
-            </div>
-            <div class="games-page-mobile__line d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon2.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Длинное название Команды»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        0
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="games-page-mobile__item games-page-mobile__item_lost">
-            <div class="games-page-mobile__info d-flex justify-content-between">
-                <div class="games-page-mobile__time">
-                    01.01.2019<br>
-                    18:00
-                </div>
-                <div class="games-page-mobile__place">
-                    НХЛ Любитель 40+ Название в Три Строки
-                </div>
-            </div>
-            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon1.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Тропик»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        1
-                    </div>
-                </div>
-            </div>
-            <div class="games-page-mobile__line d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon2.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Длинное название Команды»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        0
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="games-page-mobile__item">
-            <div class="games-page-mobile__info d-flex justify-content-between">
-                <div class="games-page-mobile__time">
-                    01.01.2019<br>
-                    18:00
-                </div>
-                <div class="games-page-mobile__place">
-                    НХЛ Любитель 40+ Название в Три Строки
-                </div>
-            </div>
-            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon1.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Тропик»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        1
-                    </div>
-                </div>
-            </div>
-            <div class="games-page-mobile__line d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon2.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Длинное название Команды»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        0
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="games-page-mobile__item">
-            <div class="games-page-mobile__info d-flex justify-content-between">
-                <div class="games-page-mobile__time">
-                    01.01.2019<br>
-                    18:00
-                </div>
-                <div class="games-page-mobile__place">
-                    НХЛ Любитель 40+ Название в Три Строки
-                </div>
-            </div>
-            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon1.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Тропик»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        1
-                    </div>
-                </div>
-            </div>
-            <div class="games-page-mobile__line d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon2.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Длинное название Команды»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        0
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="games-page-mobile__item">
-            <div class="games-page-mobile__info d-flex justify-content-between">
-                <div class="games-page-mobile__time">
-                    01.01.2019<br>
-                    18:00
-                </div>
-                <div class="games-page-mobile__place">
-                    НХЛ Любитель 40+ Название в Три Строки
-                </div>
-            </div>
-            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon1.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Тропик»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        1
-                    </div>
-                </div>
-            </div>
-            <div class="games-page-mobile__line d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon2.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Длинное название Команды»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        0
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="games-page-mobile__item">
-            <div class="games-page-mobile__info d-flex justify-content-between">
-                <div class="games-page-mobile__time">
-                    01.01.2019<br>
-                    18:00
-                </div>
-                <div class="games-page-mobile__place">
-                    НХЛ Любитель 40+ Название в Три Строки
-                </div>
-            </div>
-            <div class="games-page-mobile__line games-page-mobile__line_first d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon1.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Тропик»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        1
-                    </div>
-                </div>
-            </div>
-            <div class="games-page-mobile__line d-flex align-items-center">
-                <div class="games-page-mobile__pict">
-                    <img src="local/uploads/games.icon2.png" alt="">
-                </div>
-                <div class="games-page-mobile__team d-flex align-items-center justify-content-between">
-                    <div class="games-page-mobile__name">
-                        «Длинное название Команды»
-                    </div>
-                    <div class="games-page-mobile__score">
-                        0
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="games-page-mobile__btn-block">
-            <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
-        </div>
-    </div>
-
-    <div class="h2">Турнирная таблица</div>
-
-    <div class="tab-panel-select tab-panel-select_big">
-        <a href="javascript:;" class="tab-panel-select__item tab-panel-select__item_active">
-            <span>Все турниры</span>
-        </a>
-        <div class="tab-panel-select__items">
-            <a href="javascript:;" class="tab-panel-select__item">
-                <span>НХЛ Любитель 40+ Название в Три Строки</span>
-            </a>
-            <a href="javascript:;" class="tab-panel-select__item">
-                <span>НХЛ Любитель 40+ Название в Три Строки</span>
-            </a>
-            <a href="javascript:;" class="tab-panel-select__item">
-                <span>НХЛ Любитель 40+</span>
-            </a>
-        </div>
-    </div>
-
-    <div class="standings-block">
-        <table class="standings-block__table">
-            <thead>
-                <tr>
-                    <th>№</th>
-                    <th></th>
-                    <th>Команда</th>
-                    <th>И</th>
-                    <th>В</th>
-                    <th>Н</th>
-                    <th>П</th>
-                    <th>Ш</th>
-                    <th>0</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="standings-block__tr-bold">
-                    <td>
-                        <span class="standings-block__num">1</span>
-                    </td>
-                    <td>
-                        <span class="standings-block__pict">
-                            <img src="local/uploads/games.icon1.png" alt="">
-                        </span>
-                    </td>
-                    <td>Тропик</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>63-6</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="standings-block__num">2</span>
-                    </td>
-                    <td>
-                        <span class="standings-block__pict">
-                            <img src="local/uploads/games.icon1.png" alt="">
-                        </span>
-                    </td>
-                    <td>Тропик</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>63-6</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="standings-block__num">3</span>
-                    </td>
-                    <td>
-                        <span class="standings-block__pict">
-                            <img src="local/uploads/games.icon1.png" alt="">
-                        </span>
-                    </td>
-                    <td>Тропик</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>63-6</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="standings-block__num">4</span>
-                    </td>
-                    <td>
-                        <span class="standings-block__pict">
-                            <img src="local/uploads/games.icon1.png" alt="">
-                        </span>
-                    </td>
-                    <td>Тропик</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>63-6</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="standings-block__num">5</span>
-                    </td>
-                    <td>
-                        <span class="standings-block__pict">
-                            <img src="local/uploads/games.icon1.png" alt="">
-                        </span>
-                    </td>
-                    <td>Тропик</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>63-6</td>
-                    <td>21</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="standings-block__btn-block">
-            <a href="javascript:;" class="btn btn-secondary">Показать еще</a>
-        </div>
-    </div>
-
+<div class="main-slider">
+	<div class="container position-relative">
+		<div class="main-slider__block">
+			<div class="main-slider__title title-line">Холодильные камеры и агрегаты</div>
+			<div class="main-slider__text">Мы продаем, подбираем холодильное оборудование для успеха вашего бизнеса.</div>
+			<a href="javascript:;" class="btn btn-first">Перейти в каталог</a>
+		</div>
+		<img src="local/img/main.slider.goods.png" alt="" class="main-slider__pict">
+	</div>
+	<a href="javascript:;" class="main-slider__down">
+		<span class="main-slider__down-str"></span>
+		<span class="main-slider__down-txt">Листайте вниз</span>
+	</a>
 </div>
-<div>
 
-    <div class="team-main">
+<div class="catalog-slider">
+	<div class="catalog-slider__header">
+		<div class="container">
+			<div class="catalog-slider__title">
+				<a href="javascript:;" class="str-prev"></a>
+				<div class="h2">Камеры сборные для ресторанов, баров и торговли</div>
+				<a href="javascript:;" class="str-next"></a>
+			</div>
+		</div>
+	</div>
+    <div class="catalog-slider__inner">
         <div class="container">
-
-            <div class="h2 white-color">Игроки</div>
-
-            <div class="position-relative">
-                <div class="team-main__top-btn">
-                    <a href="javascript:;" class="btn btn-info">Показать всех игроков</a>
-                </div>
-            </div>
-
-            <div class="tab-panel tab-panel_blue d-none d-md-block">
-                <a href="javascript:;" class="tab-panel__item tab-panel__item_active">ХК Тропик (НХЛ)</a>
-                <a href="javascript:;" class="tab-panel__item">Тропик НТХЛ</a>
-                <a href="javascript:;" class="tab-panel__item">СХК Тропик</a>
-                <a href="javascript:;" class="tab-panel__item">Следж-хоккейная команда Тропик</a>
-                <a href="javascript:;" class="tab-panel__item">ОКСШОР</a>
-            </div>
-
-            <div class="tab-panel-select tab-panel-select_blue d-md-none">
-                <a href="javascript:;" class="tab-panel-select__item tab-panel-select__item_active">
-                    <span>ХК Тропик (НХЛ)</span>
-                </a>
-                <div class="tab-panel-select__items">
-                    <a href="javascript:;" class="tab-panel-select__item">Тропик НТХЛ</a>
-                    <a href="javascript:;" class="tab-panel-select__item">СХК Тропик</a>
-                    <a href="javascript:;" class="tab-panel-select__item">Следж-хоккейная команда Тропик</a>
-                    <a href="javascript:;" class="tab-panel-select__item">ОКСШОР</a>
-                </div>
-            </div>
-
-            <div class="team-main__items d-flex flex-wrap">
-                <div class="team-main__item">
-                    <div class="h3">Бомбардиры</div>
-                    <div class="team-main__block-top d-flex d-sm-block align-items-center d-sm-block">
-                        <div class="team-main__pict">
-                            <img src="local/uploads/team1.jpg" alt="">
-                        </div>
-                        <div class="team-main__box font-condensed">
-                            <div class="team-main__num">23</div>
-                            <div class="team-main__name">Худобин Николай</div>
-                            <div class="team-main__info">
-                                <span class="d-block d-sm-none">10</span> очков <span class="d-none d-sm-inline-block">10</span>
-                            </div>
-                        </div>
+            <div class="catalog-slider__items swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "1",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "61 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big.html'))(data)
+                        %>
                     </div>
-                    <div class="font-condensed">
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">9</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">8</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">7</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">6</div>
-                        </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "2",
+                            pict_name: "Холодильная камера Север КХН-4.41 куб.м. (1,36x1,96x2,2 м)",
+                            pict_price: "52 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big.html'))(data)
+                        %>
                     </div>
-                </div>
-                <div class="team-main__item">
-                    <div class="h3">Ассистенты</div>
-                    <div class="team-main__block-top d-flex d-sm-block align-items-center d-sm-block">
-                        <div class="team-main__pict">
-                            <img src="local/uploads/team2.jpg" alt="">
-                        </div>
-                        <div class="team-main__box font-condensed">
-                            <div class="team-main__num">11</div>
-                            <div class="team-main__name">Худобин Николай</div>
-                            <div class="team-main__info">
-                                <span class="d-block d-sm-none">15</span> пассов <span class="d-none d-sm-inline-block">15</span>
-                            </div>
-                        </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "3",
+                            pict_name: "Холодильная камера МХМ КХН-11.75 куб.м. (2,56x2,56x2,2 м)",
+                            pict_price: "123 890 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big.html'))(data)
+                        %>
                     </div>
-                    <div class="font-condensed">
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">9</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">8</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">7</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">6</div>
-                        </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "1",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "61 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big.html'))(data)
+                        %>
                     </div>
-                </div>
-                <div class="team-main__item">
-                    <div class="h3">Снайперы</div>
-                    <div class="team-main__block-top d-flex d-sm-block align-items-center d-sm-block">
-                        <div class="team-main__pict">
-                            <img src="local/uploads/team3.jpg" alt="">
-                        </div>
-                        <div class="team-main__box font-condensed">
-                            <div class="team-main__num">17</div>
-                            <div class="team-main__name">Худобин Николай</div>
-                            <div class="team-main__info">
-                                <span class="d-block d-sm-none">8</span> голов <span class="d-none d-sm-inline-block">8</span>
-                            </div>
-                        </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "2",
+                            pict_name: "Холодильная камера Север КХН-4.41 куб.м. (1,36x1,96x2,2 м)",
+                            pict_price: "52 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big.html'))(data)
+                        %>
                     </div>
-                    <div class="font-condensed">
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">9</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">8</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">7</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">6</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-main__item">
-                    <div class="h3">Вратари</div>
-                    <div class="team-main__block-top d-flex d-sm-block align-items-center d-sm-block">
-                        <div class="team-main__pict">
-                            <img src="local/uploads/team4.jpg" alt="">
-                        </div>
-                        <div class="team-main__box font-condensed">
-                            <div class="team-main__num">5</div>
-                            <div class="team-main__name">Худобин Николай</div>
-                            <div class="team-main__info">
-                                <span class="d-block d-sm-none">2.01</span> надёжность <span class="d-none d-sm-inline-block">2.01</span>
-                            </div>
-                         </div>
-                    </div>
-                    <div class="font-condensed">
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">9</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">8</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">7</div>
-                        </div>
-                        <div class="team-main__line d-flex align-items-center justify-content-between">
-                            <div>Касаткин Александр</div>
-                            <div class="team-main__count">6</div>
-                        </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "3",
+                            pict_name: "Холодильная камера МХМ КХН-11.75 куб.м. (2,56x2,56x2,2 м)",
+                            pict_price: "123 890 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big.html'))(data)
+                        %>
                     </div>
                 </div>
             </div>
-
-            <a href="#top-of-page" class="go-top go-to">Вернуться наверх</a>
         </div>
     </div>
+	<div class="catalog-slider__btn">
+		<div class="container text-center">
+			<a class="btn btn-second" href="javascript:;">Показать все</a>
+		</div>
+	</div>
+</div>
+                        
+<div class="info-block">
+    <div class="container">
+        <div class="info-block__inner">
+            <div class="info-block__title title-line">
+                <div class="h2">Камеры для складов</div>
+            </div>
+            <div class="info-block__desc">
+                Большие холодильные камеры для любых помещений, любой сложности и размера.
+            </div>
+        </div>
+        <div class="info-block__inner">
+            <div class="info-block__items swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="info-block__pict">
+                            <img src="local/img/info1.svg" alt="">
+                        </div>
+                        <div class="info-block__name">
+                            Фармацевтика
+                        </div>
+                        <div class="info-block__text">
+                            Для аптек и медицинских учреждений
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info-block__pict">
+                            <img src="local/img/info2.svg" alt="">
+                        </div>
+                        <div class="info-block__name">
+                            Овощехранилища
+                        </div>
+                        <div class="info-block__text">
+                            Для овощных баз и продовольственных магазинов
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info-block__pict">
+                            <img src="local/img/info3.svg" alt="">
+                        </div>
+                        <div class="info-block__name">
+                            Камеры шоковой заморозки
+                        </div>
+                        <div class="info-block__text">
+                            C заморозкой -18 С ˚
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info-block__pict">
+                            <img src="local/img/info2.svg" alt="">
+                        </div>
+                        <div class="info-block__name">
+                            Овощехранилища
+                        </div>
+                        <div class="info-block__text">
+                            Для овощных баз и продовольственных магазинов
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="str-next"></a>
+        </div>
+        <div class="info-block__inner">
+            <div class="info-block__btn">
+                <a class="btn btn-first" href="javascript:;">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="catalog-slider">
+	<div class="catalog-slider__header">
+		<div class="container">
+			<div class="catalog-slider__title">
+				<a href="javascript:;" class="str-prev"></a>
+				<div class="h2">Продажа холодильных агрегатов</div>
+				<a href="javascript:;" class="str-next"></a>
+			</div>
+		</div>
+	</div>
+    <div class="catalog-slider__inner">
+        <div class="container">
+            <div class="catalog-slider__items swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "4",
+                            pict_name: "Холодильная сплит-система Polair Standard SM 226 S",
+                            pict_price: "61 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big2.html'))(data)
+                        %>
+                    </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "5",
+                            pict_name: "Холодильная сплит-система Ариада КMS 103",
+                            pict_price: "52 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big2.html'))(data)
+                        %>
+                    </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "6",
+                            pict_name: "Моноблок Polair Standard MM<br>111 S",
+                            pict_price: "123 890 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big2.html'))(data)
+                        %>
+                    </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "4",
+                            pict_name: "Холодильная сплит-система Polair Standard SM 226 S",
+                            pict_price: "61 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big2.html'))(data)
+                        %>
+                    </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "5",
+                            pict_name: "Холодильная сплит-система Ариада КMS 103",
+                            pict_price: "52 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big2.html'))(data)
+                        %>
+                    </div>
+                    <div class="swiper-slide">
+                        <% var data = {
+                            pict_num: "6",
+                            pict_name: "Моноблок Polair Standard MM<br>111 S",
+                            pict_price: "123 890 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-big2.html'))(data)
+                        %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="catalog-slider__btn">
+		<div class="container text-center">
+			<a class="btn btn-second" href="javascript:;">Показать все</a>
+		</div>
+	</div>
+</div>
+
+<div class="our-work">
+	<div class="our-work__header">
+		<div class="container">
+			<div class="our-work__title">
+				<a href="javascript:;" class="str-prev"></a>
+				<div class="h2">Наши работы</div>
+				<a href="javascript:;" class="str-next"></a>
+			</div>
+		</div>
+	</div>
+    <div class="our-work__inner">
+        <div class="container">
+            <div class="our-work__center">
+                <div class="our-work__items swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="local/uploads/our.work1.jpg" alt="" class="our-work__pict">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="local/uploads/our.work2.jpg" alt="" class="our-work__pict">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="local/uploads/our.work3.jpg" alt="" class="our-work__pict">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="our-work__btn">
+		<div class="container text-center">
+			<a class="btn btn-second" href="javascript:;">Показать все</a>
+		</div>
+	</div>
+</div>
+
+<div class="doc-block">
+    <div class="container">
+        <div class="doc-block__inner">
+            <div class="doc-block__title">
+                <div class="h2">Документы</div>
+            </div>
+            <div class="doc-block__items">
+                <a href="local/uploads/doc1.jpg" class="doc-block__item" data-fancybox="doc">
+                    <div class="doc-block__pict">
+                        <img src="local/uploads/doc1.jpg" alt="">
+                    </div>
+                    <div class="doc-block__name">Лицензия на выполнение<br>монтажных работ</div>
+                </a>
+                <a href="local/uploads/doc2.jpg" class="doc-block__item" data-fancybox="doc">
+                    <div class="doc-block__pict">
+                        <img src="local/uploads/doc2.jpg" alt="">
+                    </div>
+                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                </a>
+                <a href="local/uploads/doc3.jpg" class="doc-block__item" data-fancybox="doc">
+                    <div class="doc-block__pict">
+                        <img src="local/uploads/doc3.jpg" alt="">
+                    </div>
+                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                </a>
+                <a href="local/uploads/doc4.jpg" class="doc-block__item" data-fancybox="doc">
+                    <div class="doc-block__pict">
+                        <img src="local/uploads/doc4.jpg" alt="">
+                    </div>
+                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                </a>
+                <a href="local/uploads/doc5.jpg" class="doc-block__item" data-fancybox="doc">
+                    <div class="doc-block__pict">
+                        <img src="local/uploads/doc5.jpg" alt="">
+                    </div>
+                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                </a>
+                <a href="local/uploads/doc6.jpg" class="doc-block__item" data-fancybox="doc">
+                    <div class="doc-block__pict">
+                        <img src="local/uploads/doc6.jpg" alt="">
+                    </div>
+                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                </a>
+                <a href="local/uploads/doc7.jpg" class="doc-block__item" data-fancybox="doc">
+                    <div class="doc-block__pict">
+                        <img src="local/uploads/doc7.jpg" alt="">
+                    </div>
+                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-block">
+    <div class="container">
+        <div class="contact-block__inner">
+            <div class="contact-block__title title-line">
+                <div class="h2">Контакты</div>
+            </div>
+            <div class="contact-block__items">
+                <div class="contact-block__item">
+                    <span class="contact-block__icon-phone"></span>
+                    <a href="teL:+79857825884" class="contact-block__link">+7 985 782-58-84</a>
+                    <div class="contact-block__info">Обратный звонок</div>
+                </div>
+                <div class="contact-block__item">
+                    <span class="contact-block__icon-email"></span>
+                    <a href="mailto:info@holodvkube.ru" class="contact-block__link">info@holodvkube.ru</a>
+                    <div class="contact-block__info">Обратная связь</div>
+                </div>
+                <div class="contact-block__item">
+                    <span class="contact-block__icon-point"></span>
+                    <span class="contact-block__addr">Москва, Краснопресненская, 32</span>
+                    <div class="contact-block__info">Адрес</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-block">
+    <div class="container">
+        <div class="map-block__inner">
+            <img src="local/uploads/map.jpg" alt="">
+        </div>
+    </div>
+</div>
 
 <%= _.template(require('./../includes/footer.html'))(data) %>
