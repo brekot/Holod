@@ -1,6 +1,6 @@
 import $ from "jquery";
 //import popper from "popper.js";
-//import bootstrap from "bootstrap";
+import bootstrap from "bootstrap";
 import Swiper from 'swiper';
 
 window.jQuery = $;
@@ -31,10 +31,12 @@ $(function() {
             slidesPerView: 3,
             spaceBetween: 30,
             breakpoints: {
-                // when window width is <= 320px
-                    320: {
+                1349: {
+                    slidesPerView: 2
+                },
+                767: {
                     slidesPerView: 1,
-                    spaceBetween: 10
+                    spaceBetween: 20
                 },
             },
             navigation: {
@@ -43,25 +45,6 @@ $(function() {
                 disabledClass: 'str-disabled'
             },
         });
-    });
-
-    /* - - - Слайдер информации - - - */
-    var elem = $('.info-block');
-
-	new Swiper($(elem).find('.info-block__items'), {
-		slidesPerView: 3,
-		spaceBetween: 130,
-		breakpoints: {
-			// when window width is <= 320px
-			320: {
-                slidesPerView: 1,
-                spaceBetween: 10
-			},
-		},
-		navigation: {
-			nextEl: $(elem).find('.str-next'),
-			disabledClass: 'str-disabled'
-		},
     });
 
     /* - - - Слайдер наши работы - - - */
@@ -73,15 +56,19 @@ $(function() {
         loop: true,
         loopAdditionalSlides: 1,
 		breakpoints: {
-			// when window width is <= 320px
 			320: {
-			slidesPerView: 1,
-			spaceBetween: 10
+                slidesPerView: 1,
+                spaceBetween: 20
 			},
 		},
 		navigation: {
             prevEl: $(elem).find('.str-prev'),
             nextEl: $(elem).find('.str-next'),
 		},
+    });
+
+    $('.menu-top-btn').click(function(){
+
+        $('.header-main').toggleClass('header-main_open');
     });
 });

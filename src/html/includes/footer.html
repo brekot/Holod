@@ -2,12 +2,12 @@
 		</main>
 		<footer class="footer-main">
 			<div class="container">
-				<div class="d-flex justify-content-between">
-					<div>
+				<div class="row no-gutters justify-content-between">
+					<div class="footer-main__part order-3 order-lg-1">
 						<div class="footer-main__copy">© 2019 Холод в кубе.</div>
 						<a href="javascript:;">Политика конфиденциальности</a>
 					</div>
-					<nav class="menu-bottom">
+					<nav class="menu-bottom order-1 order-lg-2">
 						<a href="javascript:;" class="menu-bottom__link">Холодильные камеры</a>
 						<a href="javascript:;" class="menu-bottom__link">Холодильные агрегаты</a>
 						<a href="javascript:;" class="menu-bottom__link">Подбор</a>
@@ -15,7 +15,7 @@
 						<a href="javascript:;" class="menu-bottom__link">Отзывы</a>
 						<a href="javascript:;" class="menu-bottom__link">Контакты</a>
 					</nav>
-					<div>
+					<div class="footer-main__part order-2 order-lg-3">
 						<div class="footer-main__soc">
 							<div class="footer-main__soc-title">Мы в соцсетях</div>
 							<a href="javascript:;" class="footer-main__soc-link footer-main__soc-vk"></a>
@@ -26,6 +26,41 @@
 				</div>
 			</div>
 		</footer>
+
+        <div class="modal fade modal-custom" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-custom__logo-block">
+                <div class="container">
+                    <a class="modal-custom__logo" href="/">
+                        <img src="local/img/logo.svg" alt="logo" class="modal-custom__logo-img">
+                        <span class="modal-custom__logo-name">Холод в кубе</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content modal-custom__content">
+                    <div class="modal-header modal-custom__header">
+                        <div class="h2 modal-title">Оставить заявку</div>
+                        <button type="button" class="modal-custom__close" data-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body modal-custom__body">
+                        <form class="form-style">
+                            <div class="form-style__line">
+                                <input class="form-style__text" type="name" value="" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-style__line">
+                                <input class="form-style__text" type="tel" value="" placeholder="Номер телефона">
+                            </div>
+                            <div class="form-style__line">
+                                <textarea class="form-style__textarea" placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="form-style__btn-block">
+                                <input type="submit" class="btn btn-first" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="local/js/script.js"></script>
     </body>

@@ -86,6 +86,53 @@
 	}
 }
 
+@include media-breakpoint-only(lg)
+{
+    .main-slider {
+
+        &__block {
+            padding: 0;
+        }
+        &__pict {
+            width: 610px;
+            top: 26px;
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .main-slider {
+        padding: 160px 0 0;
+        height: auto;
+
+        &:after {
+            display: none;
+        }
+        &__block {
+            padding: 275px 0 35px;
+            margin: auto;
+        }
+        &__title {
+            font-size: 42px;
+            max-width: 100%;
+            padding: 0 0 25px;
+        }
+        &__text {
+            padding: 0 0 30px;
+            max-width: 100%;
+        }
+        &__pict {
+            width: 363px;
+            left: 50%;
+            right: auto;
+            transform: translate(-50%, 0);
+        }
+        &__down {
+            display: none;
+        }
+    }
+}
+
 // Слайдер товаров
 .catalog-slider {
     position: relative;
@@ -108,6 +155,41 @@
 	&__btn {
 		padding: 55px 0 0;
 	}
+}
+
+@include media-breakpoint-only(lg)
+{
+    .catalog-slider {
+
+        &__title {
+            padding: 0 150px;
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .catalog-slider {
+
+        &__header {
+            padding: 35px 0 30px;
+        }
+        &__title {
+            padding: 0;
+        }
+        &__btn {
+            padding: 30px 0 0;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .catalog-slider {
+
+        &__items {
+            width: calc(100% - 65px);
+            margin: 0;
+        }
+    }
 }
 
 // Список товаров на главной
@@ -182,11 +264,49 @@
 	}
 }
 
+@include media-breakpoint-only(md)
+{
+    .product-big {
+        padding: 10px 20px 25px;
+
+        &__name {
+            height: 54px;
+            overflow: hidden;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .product-big {
+        padding: 10px 20px 25px;
+
+        &__pict {
+            height: 190px;
+            line-height: 190px;
+        }
+        &__pict img {
+            max-height: 100%;
+        }
+        &__name {
+            height: 72px;
+            overflow: hidden;
+            line-height: 1.2;
+            margin: 0 0 15px;
+        }
+        &__price-block {
+            margin: 15px 0 0;
+            display: block;
+        }
+        &__price {
+            margin: 0 0 15px;
+        }
+    }
+}
+
 // Блок Камеры для складов
 .info-block {
     background: url(../img/bg.info.jpg) no-repeat center top / cover;
-    min-height: 900px;
-    padding: 190px 0;
+    padding: 190px 0 140px;
     position: relative;
 
     &:before {
@@ -210,7 +330,7 @@
         left: 0;
     }
     &__inner {
-        padding: 0 220px;
+        padding: 0 0 0 220px;
         position: relative;
     }
     &__desc {
@@ -218,7 +338,12 @@
         max-width: 620px;
     }
     &__items {
-        margin: 0 0 80px;
+        margin: 0 0 75px;
+        display: flex;
+    }
+    &__item {
+        width: 230px;
+        margin: 0 100px 0 0;
     }
     &__pict {
         font-size: 0;
@@ -235,6 +360,62 @@
         font-size: 16px;
         line-height: 1.5;
         color: var(--gray-num1);
+    }
+}
+
+@include media-breakpoint-down(lg)
+{
+    .info-block {
+        padding: 45px 0 35px;
+
+        &__inner {
+            padding: 0;
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .info-block {
+
+        &:before,
+        &:after {
+            display: none;
+        }
+        &__desc {
+            padding: 30px 0;
+        }
+        &__items {
+            margin: 0 0 30px;
+        }
+        &__item {
+            width: 230px;
+            margin: 0;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .info-block {
+
+        &__items {
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        &__item {
+            width: calc(50% - 10px);
+            margin: 0 0 30px;
+
+            &:nth-child(2n) {
+                margin: 0 0 30px 20px;
+            }
+        }
+        &__pict {
+            margin: 0 0 25px;
+        }
+        &__name {
+            font-size: 16px;
+            margin: 0 0 15px;
+        }
     }
 }
 
@@ -270,6 +451,46 @@
 	&__btn {
 		padding: 20px 0 0;
 	}
+}
+
+@include media-breakpoint-only(lg)
+{
+    .our-work {
+
+        &__title {
+            padding: 0 150px;
+        }
+        &__center {
+            padding: 0 150px;
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .our-work {
+
+        &__header {
+            padding: 30px 0 25px;
+        }
+        &__title {
+            padding: 0;
+        }
+        &__center {
+            padding: 0;
+        }
+        &__btn {
+            padding: 0;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .our-work {
+
+        &__items {
+            margin: 0 65px 0 -65px;
+        }
+    }
 }
 
 // Документы
@@ -316,7 +537,7 @@
         border: solid 1px var(--blue-num2);
         border-radius: 8px;
         text-align: center;
-        padding: 10px 0;
+        padding: 10px 5px;
         margin: 0 0 20px;
     }
     &__name {
@@ -324,6 +545,77 @@
         font-weight: 500;
         line-height: 1.31;
         color: var(--blue-num3);
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .doc-block {
+
+        &__inner {
+            padding: 0 125px 0 150px;
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .doc-block {
+
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+        &__inner {
+            padding: 0;
+        }
+        &__title {
+            padding: 35px 0 25px;
+        }
+    }
+}
+@include media-breakpoint-only(md)
+{
+    .doc-block {
+        padding: 0;
+
+        &__item {
+            margin: 0 63px 25px 0;
+
+            &:nth-child(3n) {
+                margin: 0 0 25px;
+            }
+        }
+    }
+}
+@include media-breakpoint-only(sm)
+{
+    .doc-block {
+
+        &__item {
+            margin: 0 15px 25px 0;
+            width: 160px;
+
+            &:nth-child(3n) {
+                margin: 0 0 25px;
+            }
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .doc-block {
+        padding: 0 0 10px;
+
+        &__item {
+            margin: 0 20px 25px 0;
+            width: calc(50% - 10px);
+
+            &:nth-child(2n) {
+                margin: 0 0 25px;
+            }
+        }
     }
 }
 
@@ -387,6 +679,39 @@
         position: absolute;
         top: 3px;
         left: 0;
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .contact-block {
+
+        &__inner {
+            padding: 0 0 0 150px;
+        }
+        &__item {
+            width: auto;
+            margin: 0 auto 0 0;
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .contact-block {
+        padding: 0 0 15px;
+
+        &__inner {
+            padding: 0;
+        }
+        &__title {
+            padding: 0 0 20px;
+        }
+        &__items {
+            flex-wrap: wrap;
+        }
+        &__item {
+            padding: 0 0 20px 30px;
+        }
     }
 }
 

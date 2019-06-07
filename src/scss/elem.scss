@@ -14,12 +14,21 @@
     line-height: 64px;
     text-transform: uppercase;
 	transition: all .3s linear;
+    border: none;
 
 	&:hover {
 		background-image: linear-gradient(104deg, var(--deep-sky-blue), var(--deep-sky-blue-two));
 		color: var(--white);
 		box-shadow: none;
 	}
+}
+
+@include media-breakpoint-down(md)
+{
+    .btn-first {
+        width: 100%;
+        max-width: 320px;
+    }
 }
 
 .btn-second {
@@ -44,6 +53,14 @@
 	}
 }
 
+@include media-breakpoint-down(md)
+{
+    .btn-second {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
 .btn-third {
 	width: 141px;
 	height: 48px;
@@ -65,6 +82,14 @@
 	}
 }
 
+@include media-breakpoint-down(md)
+{
+    .btn-third {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
 // Линия справа от заголовков
 .title-line:before {
     content: "";
@@ -74,6 +99,13 @@
     position: absolute;
     left: 0;
     top: 30px;
+}
+
+@include media-breakpoint-down(lg)
+{
+    .title-line:before {
+        display: none;
+    }
 }
 
 // Стрелки слайдеров
@@ -119,5 +151,13 @@
 
     &:hover:before {
         width: 80px;
+    }
+}
+
+@include media-breakpoint-down(md)
+{
+    .str-prev,
+    .str-next {
+        display: none;
     }
 }
