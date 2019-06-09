@@ -122,7 +122,7 @@
     .menu-top-btn {
         height: 54px;
         width: 54px;
-        background-color: #3382f9;
+        background-color: var(--azure);
         display: inline-block;
         border-radius: 50%;
         text-align: center;
@@ -474,11 +474,11 @@
         font-size: 13px;
         font-weight: 500;
         line-height: 1.31;
-        color: #546e9b;
-            outline: none;
+        color: var(--blue-num3);
+        outline: none;
 
         &::-webkit-input-placeholder {
-            color: #546e9b;
+            color: var(--blue-num3);
         }
     }
     &__text {
