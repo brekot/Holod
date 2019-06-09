@@ -19,6 +19,12 @@ h2, .h2 {
   font-size: 42px;
   font-weight: 700;
 }
+h1, .h1 {
+    margin: 0 0 20px;
+}
+h2, .h2 {
+    margin: 0;
+}
 img {
     max-width: 100%;
     height: auto;

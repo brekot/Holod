@@ -1,0 +1,245 @@
+// Синяя рамка для блоков
+.border-blue {
+    border-radius: 8px;
+    border: solid 1px var(--blue-num2);
+}
+
+// Левый блок
+.aside-block {
+    padding: 20px 0 5px;
+
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0 20px;
+    }
+}
+
+@include media-breakpoint-down(md)
+{
+    .aside-block {
+        margin: 0 0 20px;
+    }
+}
+
+// Левое меню
+.menu-left {
+    padding: 12px 0 0;
+
+    &__link {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.31;
+        color: var(--blue-num3);
+        display: block;
+        padding: 10px 20px 12px;
+        position: relative;
+
+        &_active {
+            background-color: var(--azure);
+            color: var(--white);
+
+            &:hover {
+                color: var(--white);
+            }
+            &:after {
+                background: url(../img/str.arrow.svg) no-repeat 50%;
+                content: '';
+                width: 5px;
+                height: 10px;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translate(0, -60%);
+            }
+        }
+    }
+}
+
+// Сортировка каталога
+.catalog-sort {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.31;
+    color: var(--blue-num3);
+    margin: 0 0 30px;
+
+    &__title {
+        line-height: 30px;
+        display: inline-block;
+    }
+    &__link {
+        line-height: 30px;
+        display: inline-block;
+        color: var(--blue-num3);
+        margin: 0 0 0 15px;
+
+        &_active {
+            border-radius: 15px;
+            background-color: var(--azure);
+            padding: 0 13px;
+            color: var(--white);
+        }
+        &_up:after {
+            content: ' ↑';
+        }
+        &_down:after {
+            content: ' ↓';
+        }
+    }
+    &__count {
+        line-height: 30px;
+        display: inline-block;
+    }
+}
+
+@include media-breakpoint-down(md)
+{
+    .catalog-sort {
+        margin: 0 0 20px;
+    }
+}
+
+// Список товаров
+.catalog-list {
+
+    &__btn {
+        padding: 20px 0 30px;
+    }
+}
+
+@include media-breakpoint-down(sm)
+{
+    .catalog-list {
+
+        &__btn {
+            padding: 0 0 30px;
+        }
+
+        // Правим сетку
+        .row {
+            margin: 0 -10px;
+        }
+        .col-6 {
+            padding: 0 10px;
+        }
+    }
+}
+
+// Список товаров
+.product-small {
+	border: solid 1px var(--light-blue-num3);
+    border-radius: 8px;
+    background-color: var(--light-blue-num3);
+    padding: 20px;
+	transition: all .3s linear;
+    margin: 0 0 30px;
+
+	&__pict {
+        display: block;
+        text-align: center;
+        margin: 0 0 5px;
+        height: 290px;
+        line-height: 290px;
+        font-size: 0;
+    }
+	&__name {
+		font-size: 20px;
+		line-height: 1.5;
+		color: var(--blue-num5);
+		display: block;
+		margin: 0 0 20px;
+	}
+	&__props {
+		font-size: 16px;
+		line-height: 1.5;
+		color: var(--gray-num1);
+		width: 100%;
+
+		& tr {
+			vertical-align: top;
+		}
+		& td {
+
+			&:first-child {
+				width: 100%;
+				position: relative;
+				overflow: hidden;
+
+				&:after {
+					content: "";
+					width: 100%;
+					height: calc(100% - 8px);
+					position: absolute;
+					border-bottom: 1px solid var(--gray-num2);
+					margin: 0 0 0 5px;
+				}
+			}
+			&:last-child {
+				padding: 0 0 0 5px;
+				white-space: nowrap;
+			}
+		}
+	}
+	&__price-block {
+		margin: 20px 0 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__price {
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	&:hover {
+		border-color: var(--blue-num2);
+		border-radius: 8px;
+		background-color: var(--white);
+	}
+}
+
+@include media-breakpoint-only(md)
+{
+    .product-small {
+        padding: 10px 20px 25px;
+
+        &__name {
+            height: 54px;
+            overflow: hidden;
+        }
+    }
+}
+@include media-breakpoint-down(sm)
+{
+    .product-small {
+        padding: 10px 10px 15px;
+        margin: 0 0 20px;
+
+        &__pict {
+            height: 160px;
+            line-height: 160px;
+            margin: 0;
+        }
+        &__pict img {
+            max-height: 100%;
+        }
+        &__name {
+            font-size: 16px;
+            line-height: normal;
+            margin: 0 0 10px;
+        }
+        &__props {
+            display: none;
+        }
+        &__price-block {
+            margin: 0;
+            display: block;
+        }
+        &__price {
+            font-size: 20px;
+            margin: 0 0 15px;
+        }
+    }
+}

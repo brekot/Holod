@@ -250,6 +250,20 @@
 .main-main {
     max-width: 100%;
     overflow: hidden;
+
+    &_inner {
+        padding: 190px 0 0;
+    }
+}
+
+@include media-breakpoint-down(md)
+{
+    .main-main {
+
+        &_inner {
+            padding: 180px 0 0;
+        }
+    }
 }
 
 // Подвал сайта
@@ -492,3 +506,4 @@
 }
 
 @import "./page/index";
+@import "./page/catalog";

@@ -1,0 +1,149 @@
+<% var data = {
+    title: "Holod | Каталог",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data)
+%>
+
+<main class="main-main main-main_inner">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xl-2 col-lg-3">
+                <div class="h1 d-lg-none">Холодильные камеры</div>
+                <aside class="aside-block border-blue">
+                    <div class="aside-block__title">Вид оборудования</div>
+                    <nav class="menu-left">
+                        <a href="javascript:;" class="menu-left__link">Цветочные камеры</a>
+                        <a href="javascript:;" class="menu-left__link menu-left__link_active">Бары рестораны</a>
+                        <a href="javascript:;" class="menu-left__link">Для складов</a>
+                        <a href="javascript:;" class="menu-left__link">Фармацевтика</a>
+                    </nav>
+                </aside>
+            </div>
+            <div class="col-xl-10 col-lg-9">
+                <h1 class="d-none d-lg-block">Холодильные камеры</h1>
+                <div class="catalog-sort border-blue">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <span class="catalog-sort__title">Сортировать по:</span>
+                            <a href="javascript:;" class="catalog-sort__link catalog-sort__link_active catalog-sort__link_down">цене</a>
+                            <a href="javascript:;" class="catalog-sort__link">популярности</a>
+                        </div>
+                        <div class="col-sm-4 text-right">
+                            <span class="catalog-sort__count">Всего товаров: 36</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-list">
+                    <div class="row">
+
+                        <% var data = {
+                            pict_num: "1",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "61 990 р."
+                        };%>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+                        %>
+
+                        <% var data = {
+                            pict_num: "2",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "52 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+
+                        %>
+                        <% var data = {
+                            pict_num: "3",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "123 890 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+                        %>
+
+                        <% var data = {
+                            pict_num: "1",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "61 990 р."
+                        };%>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+                        %>
+
+                        <% var data = {
+                            pict_num: "2",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "52 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+
+                        %>
+                        <% var data = {
+                            pict_num: "3",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "123 890 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+                        %>
+
+                        <% var data = {
+                            pict_num: "1",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "61 990 р."
+                        };%>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+                        %>
+
+                        <% var data = {
+                            pict_num: "2",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "52 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+
+                        %>
+                        <% var data = {
+                            pict_num: "3",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "123 890 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+                        %>
+
+                        <% var data = {
+                            pict_num: "1",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "61 990 р."
+                        };%>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+                        %>
+
+                        <% var data = {
+                            pict_num: "2",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "52 990 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+
+                        %>
+                        <% var data = {
+                            pict_num: "3",
+                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                            pict_price: "123 890 р."
+                        }; %>
+                        <%= _.template(require('./../includes/product-small.html'))(data)
+                        %>
+
+                        <div class="col-12">
+                            <div class="catalog-list__btn">
+                                <a class="btn btn-second btn-full-width" href="javascript:;">Показать еще</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

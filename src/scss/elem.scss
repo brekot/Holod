@@ -1,4 +1,11 @@
 // Стили кнопок
+.btn {
+
+    &-full-width {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
 .btn-first {
     width: 252px;
     height: 64px;
@@ -53,7 +60,7 @@
 	}
 }
 
-@include media-breakpoint-down(md)
+@include media-breakpoint-down(xs)
 {
     .btn-second {
         width: 100%;
@@ -82,7 +89,7 @@
 	}
 }
 
-@include media-breakpoint-down(md)
+@include media-breakpoint-down(xs)
 {
     .btn-third {
         width: 100%;
