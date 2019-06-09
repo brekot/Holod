@@ -47,6 +47,25 @@ $(function() {
         });
     });
 
+    /* - - - Слайдер отзывы клиентов - - - */
+    var elem = $('.review-block');
+
+	new Swiper($(elem).find('.review-block__items'), {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		breakpoints: {
+			320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+			},
+		},
+		navigation: {
+            prevEl: $(elem).find('.str-prev'),
+            nextEl: $(elem).find('.str-next'),
+            disabledClass: 'str-disabled'
+		},
+    });
+
     /* - - - Слайдер наши работы - - - */
     var elem = $('.our-work');
 

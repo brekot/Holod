@@ -419,6 +419,103 @@
     }
 }
 
+// Что мы делаем
+.we-do {
+    background: url(../img/bg.ice.one.png) no-repeat bottom left;
+    height: 830px;
+    padding: 115px 0 0;
+
+    &__title {
+        position: relative;
+        margin: 0 0 120px;
+
+        &:after {
+            content: "";
+            width: 80px;
+            height: 2px;
+            background-color: var(--azure);
+            position: absolute;
+            bottom: -45px;
+            left: 0;
+        }
+    }
+    &__items {
+        position: relative;
+    }
+    &__item {
+        display: block;
+        max-width: 300px;
+        margin: 0 0 50px;
+
+        &:nth-child(2n) {
+            position: absolute;
+            left: 330px;
+            margin: -70px 0 0;
+        }
+    }
+    &__num {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--azure);
+        display: block;
+        margin: 0 0 5px;
+    }
+    &__name {
+        font-size: 42px;
+        font-weight: 700;
+        color: #5a739f;
+        border-bottom: 1px dashed #5a739f;
+        padding: 0 0 5px;
+        line-height: 50px;
+        display: inline-block;
+        transition: color .3s linear;
+    }
+
+    &__item:hover .we-do__name {
+        color: var(--azure);
+        border-bottom-color: var(--azure);
+    }
+}
+
+// Отзывы клиентов
+.review-block {
+    background: url(../img/bg.ice.two.png) no-repeat 0 0, #e2f2ff url(../img/bg.review.jpg) no-repeat center / cover;
+    height: 789px;
+    position: relative;
+    z-index: 2;
+
+	&__header {
+		padding: 110px 0 55px;
+	}
+	&__title {
+		padding: 0 230px 0 220px;
+		position: relative;
+	}
+    &__inner {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    &__center {
+        padding: 0 0 0 220px;
+        max-width: 1180px;
+    }
+	&__items {
+        overflow: visible;
+        padding: 30px 0;
+    }
+    &__item {
+        border-radius: 8px;
+        background-color: var(--white);
+        display: block;
+        padding: 15px;
+        transition: box-shadow .3s linear;
+
+        &:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+        }
+    }
+}
+
 // Наши работы
 .our-work {
     position: relative;
@@ -426,6 +523,7 @@
 
 	&__header {
 		padding: 100px 0 70px;
+        background: url(../img/bg.our.work.jpg) no-repeat top left;
 	}
 	&__title {
 		padding: 0 230px 0 220px;
@@ -471,6 +569,7 @@
 
         &__header {
             padding: 30px 0 25px;
+            background: none;
         }
         &__title {
             padding: 0;

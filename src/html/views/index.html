@@ -6,359 +6,447 @@
 
 <main class="main-main">
 
-<div class="main-slider">
-	<div class="container position-relative">
-		<div class="main-slider__block">
-			<div class="main-slider__title title-line">Холодильные камеры и агрегаты</div>
-			<div class="main-slider__text">Мы продаем, подбираем холодильное оборудование для успеха вашего бизнеса.</div>
-			<a href="javascript:;" class="btn btn-first">Перейти в каталог</a>
-		</div>
-		<img src="local/img/main.slider.goods.png" alt="" class="main-slider__pict">
-	</div>
-	<a href="javascript:;" class="main-slider__down">
-		<span class="main-slider__down-str"></span>
-		<span class="main-slider__down-txt">Листайте вниз</span>
-	</a>
-</div>
-
-<div class="catalog-slider">
-	<div class="catalog-slider__header">
-		<div class="container">
-			<div class="catalog-slider__title">
-				<a href="javascript:;" class="str-prev"></a>
-				<div class="h2">Камеры сборные для ресторанов, баров и торговли</div>
-				<a href="javascript:;" class="str-next"></a>
-			</div>
-		</div>
-	</div>
-    <div class="catalog-slider__inner">
-        <div class="container">
-            <div class="catalog-slider__items swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "1",
-                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
-                            pict_price: "61 990 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "2",
-                            pict_name: "Холодильная камера Север КХН-4.41 куб.м. (1,36x1,96x2,2 м)",
-                            pict_price: "52 990 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "3",
-                            pict_name: "Холодильная камера МХМ КХН-11.75 куб.м. (2,56x2,56x2,2 м)",
-                            pict_price: "123 890 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "1",
-                            pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
-                            pict_price: "61 990 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "2",
-                            pict_name: "Холодильная камера Север КХН-4.41 куб.м. (1,36x1,96x2,2 м)",
-                            pict_price: "52 990 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "3",
-                            pict_name: "Холодильная камера МХМ КХН-11.75 куб.м. (2,56x2,56x2,2 м)",
-                            pict_price: "123 890 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big.html'))(data)
-                        %>
-                    </div>
-                </div>
+    <div class="main-slider">
+        <div class="container position-relative">
+            <div class="main-slider__block">
+                <div class="main-slider__title title-line">Холодильные камеры и агрегаты</div>
+                <div class="main-slider__text">Мы продаем, подбираем холодильное оборудование для успеха вашего бизнеса.</div>
+                <a href="javascript:;" class="btn btn-first">Перейти в каталог</a>
             </div>
+            <img src="local/img/main.slider.goods.png" alt="" class="main-slider__pict">
         </div>
+        <a href="javascript:;" class="main-slider__down">
+            <span class="main-slider__down-str"></span>
+            <span class="main-slider__down-txt">Листайте вниз</span>
+        </a>
     </div>
-	<div class="catalog-slider__btn">
-		<div class="container text-center">
-			<a class="btn btn-second" href="javascript:;">Показать все</a>
-		</div>
-	</div>
-</div>
-                        
-<div class="info-block">
-    <div class="container">
-        <div class="info-block__inner">
-            <div class="info-block__title title-line">
-                <div class="h2">Камеры для складов</div>
-            </div>
-            <div class="info-block__desc">
-                Большие холодильные камеры для любых помещений, любой сложности и размера.
-            </div>
-        </div>
-        <div class="info-block__inner">
-            <div class="info-block__items">
-                <div class="info-block__item">
-                    <div class="info-block__pict">
-                        <img src="local/img/info1.svg" alt="">
-                    </div>
-                    <div class="info-block__name">
-                        Фармацевтика
-                    </div>
-                    <div class="info-block__text">
-                        Для аптек и медицинских учреждений
-                    </div>
-                </div>
-                <div class="info-block__item">
-                    <div class="info-block__pict">
-                        <img src="local/img/info2.svg" alt="">
-                    </div>
-                    <div class="info-block__name">
-                        Овощехранилища
-                    </div>
-                    <div class="info-block__text">
-                        Для овощных баз и продовольственных магазинов
-                    </div>
-                </div>
-                <div class="info-block__item">
-                    <div class="info-block__pict">
-                        <img src="local/img/info3.svg" alt="">
-                    </div>
-                    <div class="info-block__name">
-                        Камеры шоковой заморозки
-                    </div>
-                    <div class="info-block__text">
-                        C заморозкой -18 С ˚
-                    </div>
-                </div>
-            </div>
-            <a href="javascript:;" class="str-next"></a>
-        </div>
-        <div class="info-block__inner">
-            <div class="info-block__btn">
-                <a class="btn btn-first" href="javascript:;">Оставить заявку</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="catalog-slider">
-	<div class="catalog-slider__header">
-		<div class="container">
-			<div class="catalog-slider__title">
-				<a href="javascript:;" class="str-prev"></a>
-				<div class="h2">Продажа холодильных агрегатов</div>
-				<a href="javascript:;" class="str-next"></a>
-			</div>
-		</div>
-	</div>
-    <div class="catalog-slider__inner">
-        <div class="container">
-            <div class="catalog-slider__items swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "4",
-                            pict_name: "Холодильная сплит-система Polair Standard SM 226 S",
-                            pict_price: "61 990 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big2.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "5",
-                            pict_name: "Холодильная сплит-система Ариада КMS 103",
-                            pict_price: "52 990 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big2.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "6",
-                            pict_name: "Моноблок Polair Standard MM<br>111 S",
-                            pict_price: "123 890 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big2.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "4",
-                            pict_name: "Холодильная сплит-система Polair Standard SM 226 S",
-                            pict_price: "61 990 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big2.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "5",
-                            pict_name: "Холодильная сплит-система Ариада КMS 103",
-                            pict_price: "52 990 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big2.html'))(data)
-                        %>
-                    </div>
-                    <div class="swiper-slide">
-                        <% var data = {
-                            pict_num: "6",
-                            pict_name: "Моноблок Polair Standard MM<br>111 S",
-                            pict_price: "123 890 р."
-                        }; %>
-                        <%= _.template(require('./../includes/product-big2.html'))(data)
-                        %>
-                    </div>
+    <div class="catalog-slider">
+        <div class="catalog-slider__header">
+            <div class="container">
+                <div class="catalog-slider__title">
+                    <a href="javascript:;" class="str-prev"></a>
+                    <div class="h2">Камеры сборные для ресторанов, баров и торговли</div>
+                    <a href="javascript:;" class="str-next"></a>
                 </div>
             </div>
         </div>
-    </div>
-	<div class="catalog-slider__btn">
-		<div class="container text-center">
-			<a class="btn btn-second" href="javascript:;">Показать все</a>
-		</div>
-	</div>
-</div>
-
-<div class="our-work">
-	<div class="our-work__header">
-		<div class="container">
-			<div class="our-work__title">
-				<a href="javascript:;" class="str-prev"></a>
-				<div class="h2">Наши работы</div>
-				<a href="javascript:;" class="str-next"></a>
-			</div>
-		</div>
-	</div>
-    <div class="our-work__inner">
-        <div class="container">
-            <div class="our-work__center">
-                <div class="our-work__items swiper-container">
+        <div class="catalog-slider__inner">
+            <div class="container">
+                <div class="catalog-slider__items swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="local/uploads/our.work1.jpg" alt="" class="our-work__pict">
+                            <% var data = {
+                                pict_num: "1",
+                                pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                                pict_price: "61 990 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big.html'))(data)
+                            %>
                         </div>
                         <div class="swiper-slide">
-                            <img src="local/uploads/our.work2.jpg" alt="" class="our-work__pict">
+                            <% var data = {
+                                pict_num: "2",
+                                pict_name: "Холодильная камера Север КХН-4.41 куб.м. (1,36x1,96x2,2 м)",
+                                pict_price: "52 990 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big.html'))(data)
+                            %>
                         </div>
                         <div class="swiper-slide">
-                            <img src="local/uploads/our.work3.jpg" alt="" class="our-work__pict">
+                            <% var data = {
+                                pict_num: "3",
+                                pict_name: "Холодильная камера МХМ КХН-11.75 куб.м. (2,56x2,56x2,2 м)",
+                                pict_price: "123 890 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big.html'))(data)
+                            %>
+                        </div>
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "1",
+                                pict_name: "Kамера 1360х1960 + Polair SM 111 MF + монтаж",
+                                pict_price: "61 990 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big.html'))(data)
+                            %>
+                        </div>
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "2",
+                                pict_name: "Холодильная камера Север КХН-4.41 куб.м. (1,36x1,96x2,2 м)",
+                                pict_price: "52 990 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big.html'))(data)
+                            %>
+                        </div>
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "3",
+                                pict_name: "Холодильная камера МХМ КХН-11.75 куб.м. (2,56x2,56x2,2 м)",
+                                pict_price: "123 890 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big.html'))(data)
+                            %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-slider__btn">
+            <div class="container text-center">
+                <a class="btn btn-second" href="javascript:;">Показать все</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-block">
+        <div class="container">
+            <div class="info-block__inner">
+                <div class="info-block__title title-line">
+                    <div class="h2">Камеры для складов</div>
+                </div>
+                <div class="info-block__desc">
+                    Большие холодильные камеры для любых помещений, любой сложности и размера.
+                </div>
+            </div>
+            <div class="info-block__inner">
+                <div class="info-block__items">
+                    <div class="info-block__item">
+                        <div class="info-block__pict">
+                            <img src="local/img/info1.svg" alt="">
+                        </div>
+                        <div class="info-block__name">
+                            Фармацевтика
+                        </div>
+                        <div class="info-block__text">
+                            Для аптек и медицинских учреждений
+                        </div>
+                    </div>
+                    <div class="info-block__item">
+                        <div class="info-block__pict">
+                            <img src="local/img/info2.svg" alt="">
+                        </div>
+                        <div class="info-block__name">
+                            Овощехранилища
+                        </div>
+                        <div class="info-block__text">
+                            Для овощных баз и продовольственных магазинов
+                        </div>
+                    </div>
+                    <div class="info-block__item">
+                        <div class="info-block__pict">
+                            <img src="local/img/info3.svg" alt="">
+                        </div>
+                        <div class="info-block__name">
+                            Камеры шоковой заморозки
+                        </div>
+                        <div class="info-block__text">
+                            C заморозкой -18 С ˚
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="str-next"></a>
+            </div>
+            <div class="info-block__inner">
+                <div class="info-block__btn">
+                    <a class="btn btn-first" href="javascript:;">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog-slider">
+        <div class="catalog-slider__header">
+            <div class="container">
+                <div class="catalog-slider__title">
+                    <a href="javascript:;" class="str-prev"></a>
+                    <div class="h2">Продажа холодильных агрегатов</div>
+                    <a href="javascript:;" class="str-next"></a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-slider__inner">
+            <div class="container">
+                <div class="catalog-slider__items swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "4",
+                                pict_name: "Холодильная сплит-система Polair Standard SM 226 S",
+                                pict_price: "61 990 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big2.html'))(data)
+                            %>
+                        </div>
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "5",
+                                pict_name: "Холодильная сплит-система Ариада КMS 103",
+                                pict_price: "52 990 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big2.html'))(data)
+                            %>
+                        </div>
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "6",
+                                pict_name: "Моноблок Polair Standard MM<br>111 S",
+                                pict_price: "123 890 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big2.html'))(data)
+                            %>
+                        </div>
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "4",
+                                pict_name: "Холодильная сплит-система Polair Standard SM 226 S",
+                                pict_price: "61 990 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big2.html'))(data)
+                            %>
+                        </div>
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "5",
+                                pict_name: "Холодильная сплит-система Ариада КMS 103",
+                                pict_price: "52 990 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big2.html'))(data)
+                            %>
+                        </div>
+                        <div class="swiper-slide">
+                            <% var data = {
+                                pict_num: "6",
+                                pict_name: "Моноблок Polair Standard MM<br>111 S",
+                                pict_price: "123 890 р."
+                            }; %>
+                            <%= _.template(require('./../includes/product-big2.html'))(data)
+                            %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-slider__btn">
+            <div class="container text-center">
+                <a class="btn btn-second" href="javascript:;">Показать все</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="we-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                </div>
+                <div class="col-6">
+                    <div class="we-do__title">
+                        <div class="h2">Что мы делаем</div>
+                    </div>
+                    <div class="we-do__items">
+                        <a href="javascript:;" class="we-do__item">
+                            <span class="we-do__num">01</span>
+                            <span class="we-do__name">Проекты</span>
+                        </a>
+                        <a href="javascript:;" class="we-do__item">
+                            <span class="we-do__num">02</span>
+                            <span class="we-do__name">Монтаж</span>
+                        </a>
+                        <a href="javascript:;" class="we-do__item">
+                            <span class="we-do__num">03</span>
+                            <span class="we-do__name">Замеры</span>
+                        </a>
+                        <a href="javascript:;" class="we-do__item">
+                            <span class="we-do__num">04</span>
+                            <span class="we-do__name">Поставку</span>
+                        </a>
+                        <a href="javascript:;" class="we-do__item">
+                            <span class="we-do__num">05</span>
+                            <span class="we-do__name">Техническое обслуживание</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="review-block">
+        <div class="review-block__header">
+            <div class="container">
+                <div class="review-block__title">
+                    <a href="javascript:;" class="str-prev"></a>
+                    <div class="h2">Отзывы клиентов</div>
+                    <a href="javascript:;" class="str-next"></a>
+                </div>
+            </div>
+        </div>
+        <div class="review-block__inner">
+            <div class="container">
+                <div class="review-block__center">
+                    <div class="review-block__items swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="local/uploads/review1.jpg" class="review-block__item" data-fancybox="review">
+                                    <img src="local/uploads/review1.jpg" alt="" class="review-block__pict">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="local/uploads/review2.jpg" class="review-block__item" data-fancybox="review">
+                                    <img src="local/uploads/review2.jpg" alt="" class="review-block__pict">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="local/uploads/review3.jpg" class="review-block__item" data-fancybox="review">
+                                    <img src="local/uploads/review3.jpg" alt="" class="review-block__pict">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="local/uploads/review1.jpg" class="review-block__item" data-fancybox="review">
+                                    <img src="local/uploads/review1.jpg" alt="" class="review-block__pict">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="local/uploads/review2.jpg" class="review-block__item" data-fancybox="review">
+                                    <img src="local/uploads/review2.jpg" alt="" class="review-block__pict">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="local/uploads/review3.jpg" class="review-block__item" data-fancybox="review">
+                                    <img src="local/uploads/review3.jpg" alt="" class="review-block__pict">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-	<div class="our-work__btn">
-		<div class="container text-center">
-			<a class="btn btn-second" href="javascript:;">Показать все</a>
-		</div>
-	</div>
-</div>
 
-<div class="doc-block">
-    <div class="container">
-        <div class="doc-block__inner">
-            <div class="doc-block__title">
-                <div class="h2">Документы</div>
-            </div>
-            <div class="doc-block__items">
-                <a href="local/uploads/doc1.jpg" class="doc-block__item" data-fancybox="doc">
-                    <div class="doc-block__pict">
-                        <img src="local/uploads/doc1.jpg" alt="">
-                    </div>
-                    <div class="doc-block__name">Лицензия на выполнение<br>монтажных работ</div>
-                </a>
-                <a href="local/uploads/doc2.jpg" class="doc-block__item" data-fancybox="doc">
-                    <div class="doc-block__pict">
-                        <img src="local/uploads/doc2.jpg" alt="">
-                    </div>
-                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
-                </a>
-                <a href="local/uploads/doc3.jpg" class="doc-block__item" data-fancybox="doc">
-                    <div class="doc-block__pict">
-                        <img src="local/uploads/doc3.jpg" alt="">
-                    </div>
-                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
-                </a>
-                <a href="local/uploads/doc4.jpg" class="doc-block__item" data-fancybox="doc">
-                    <div class="doc-block__pict">
-                        <img src="local/uploads/doc4.jpg" alt="">
-                    </div>
-                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
-                </a>
-                <a href="local/uploads/doc5.jpg" class="doc-block__item" data-fancybox="doc">
-                    <div class="doc-block__pict">
-                        <img src="local/uploads/doc5.jpg" alt="">
-                    </div>
-                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
-                </a>
-                <a href="local/uploads/doc6.jpg" class="doc-block__item" data-fancybox="doc">
-                    <div class="doc-block__pict">
-                        <img src="local/uploads/doc6.jpg" alt="">
-                    </div>
-                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
-                </a>
-                <a href="local/uploads/doc7.jpg" class="doc-block__item" data-fancybox="doc">
-                    <div class="doc-block__pict">
-                        <img src="local/uploads/doc7.jpg" alt="">
-                    </div>
-                    <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="contact-block">
-    <div class="container">
-        <div class="contact-block__inner">
-            <div class="contact-block__title title-line">
-                <div class="h2">Контакты</div>
-            </div>
-            <div class="contact-block__items">
-                <div class="contact-block__item">
-                    <span class="contact-block__icon-phone"></span>
-                    <a href="teL:+79857825884" class="contact-block__link">+7 985 782-58-84</a>
-                    <div class="contact-block__info">Обратный звонок</div>
-                </div>
-                <div class="contact-block__item">
-                    <span class="contact-block__icon-email"></span>
-                    <a href="mailto:info@holodvkube.ru" class="contact-block__link">info@holodvkube.ru</a>
-                    <div class="contact-block__info">Обратная связь</div>
-                </div>
-                <div class="contact-block__item">
-                    <span class="contact-block__icon-point"></span>
-                    <span class="contact-block__addr">Москва, Краснопресненская, 32</span>
-                    <div class="contact-block__info">Адрес</div>
+    <div class="our-work">
+        <div class="our-work__header">
+            <div class="container">
+                <div class="our-work__title">
+                    <a href="javascript:;" class="str-prev"></a>
+                    <div class="h2">Наши работы</div>
+                    <a href="javascript:;" class="str-next"></a>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="map-block">
-    <div class="container">
-        <div class="map-block__inner">
-            <img src="local/uploads/map.jpg" alt="">
+        <div class="our-work__inner">
+            <div class="container">
+                <div class="our-work__center">
+                    <div class="our-work__items swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="local/uploads/our.work1.jpg" alt="" class="our-work__pict">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="local/uploads/our.work2.jpg" alt="" class="our-work__pict">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="local/uploads/our.work3.jpg" alt="" class="our-work__pict">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-work__btn">
+            <div class="container text-center">
+                <a class="btn btn-second" href="javascript:;">Показать все</a>
+            </div>
         </div>
     </div>
-</div>
+
+    <div class="doc-block">
+        <div class="container">
+            <div class="doc-block__inner">
+                <div class="doc-block__title">
+                    <div class="h2">Документы</div>
+                </div>
+                <div class="doc-block__items">
+                    <a href="local/uploads/doc1.jpg" class="doc-block__item" data-fancybox="doc">
+                        <div class="doc-block__pict">
+                            <img src="local/uploads/doc1.jpg" alt="">
+                        </div>
+                        <div class="doc-block__name">Лицензия на выполнение<br>монтажных работ</div>
+                    </a>
+                    <a href="local/uploads/doc2.jpg" class="doc-block__item" data-fancybox="doc">
+                        <div class="doc-block__pict">
+                            <img src="local/uploads/doc2.jpg" alt="">
+                        </div>
+                        <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                    </a>
+                    <a href="local/uploads/doc3.jpg" class="doc-block__item" data-fancybox="doc">
+                        <div class="doc-block__pict">
+                            <img src="local/uploads/doc3.jpg" alt="">
+                        </div>
+                        <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                    </a>
+                    <a href="local/uploads/doc4.jpg" class="doc-block__item" data-fancybox="doc">
+                        <div class="doc-block__pict">
+                            <img src="local/uploads/doc4.jpg" alt="">
+                        </div>
+                        <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                    </a>
+                    <a href="local/uploads/doc5.jpg" class="doc-block__item" data-fancybox="doc">
+                        <div class="doc-block__pict">
+                            <img src="local/uploads/doc5.jpg" alt="">
+                        </div>
+                        <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                    </a>
+                    <a href="local/uploads/doc6.jpg" class="doc-block__item" data-fancybox="doc">
+                        <div class="doc-block__pict">
+                            <img src="local/uploads/doc6.jpg" alt="">
+                        </div>
+                        <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                    </a>
+                    <a href="local/uploads/doc7.jpg" class="doc-block__item" data-fancybox="doc">
+                        <div class="doc-block__pict">
+                            <img src="local/uploads/doc7.jpg" alt="">
+                        </div>
+                        <div class="doc-block__name">Сертификат соответствия<br>№ 1231789ПУ</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-block">
+        <div class="container">
+            <div class="contact-block__inner">
+                <div class="contact-block__title title-line">
+                    <div class="h2">Контакты</div>
+                </div>
+                <div class="contact-block__items">
+                    <div class="contact-block__item">
+                        <span class="contact-block__icon-phone"></span>
+                        <a href="teL:+79857825884" class="contact-block__link">+7 985 782-58-84</a>
+                        <div class="contact-block__info">Обратный звонок</div>
+                    </div>
+                    <div class="contact-block__item">
+                        <span class="contact-block__icon-email"></span>
+                        <a href="mailto:info@holodvkube.ru" class="contact-block__link">info@holodvkube.ru</a>
+                        <div class="contact-block__info">Обратная связь</div>
+                    </div>
+                    <div class="contact-block__item">
+                        <span class="contact-block__icon-point"></span>
+                        <span class="contact-block__addr">Москва, Краснопресненская, 32</span>
+                        <div class="contact-block__info">Адрес</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-block">
+        <div class="container">
+            <div class="map-block__inner">
+                <img src="local/uploads/map.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
 </main>
 
