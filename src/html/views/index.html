@@ -235,36 +235,102 @@
         </div>
     </div>
 
+    <div class="calc-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xl-6">
+                    <div class="calc-block__text">
+                        <div class="calc-block__title">
+                            <div class="h2">Расчет и подбор холодильных установок</div>
+                        </div>
+                        <div>
+                            Подберем промышленные холодильные агрегаты и стандартные холодильные и морозильные сплит-системы.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-xl-6">
+                    <div class="calc-box">
+                        <div class="calc-box__title">Размер холодильной камеры</div>
+                        <div class="calc-box__line form-style-two">
+                            <div class="row">
+                                <div class="col-6 col-sm-4">
+                                    <label class="form-style-two__text-label">Длина, мм</label>
+                                    <input class="form-style-two__text" type="text" value="0" placeholder="0">
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <label class="form-style-two__text-label">Длина, мм</label>
+                                    <input class="form-style-two__text" type="text" value="0" placeholder="0">
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <label class="form-style-two__text-label">Длина, мм</label>
+                                    <input class="form-style-two__text" type="text" value="0" placeholder="0">
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="calc-box__title">Температурный режим</div>
+                        <div class="calc-box__line form-style-two">
+                            <label class="form-style-two__radio">
+                                <input class="form-style-two__radio-input" type="radio" name="radio" value="0" checked>
+                                <div class="form-style-two__radio-label">-30° С</div>
+                            </label>
+                            <label class="form-style-two__radio">
+                                <input class="form-style-two__radio-input" type="radio" name="radio" value="0" checked>
+                                <div class="form-style-two__radio-label">-18° С</div>
+                            </label>
+
+                            <label class="form-style-two__radio">
+                                <input class="form-style-two__radio-input" type="radio" name="radio" value="0" checked>
+                                <div class="form-style-two__radio-label">+2° С</div>
+                            </label>
+                        </div>
+                        <div class="calc-box__btn-block">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <span class="calc-box__price">от 146 000 р.</span>
+                                </div>
+                                <div class="col-sm-7 text-sm-right">
+                                    <a class="btn btn-first" href="javascript:;">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calc-block__one-ice"></div>
+    </div>
+
     <div class="we-do">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                </div>
-                <div class="col-6">
-                    <div class="we-do__title">
-                        <div class="h2">Что мы делаем</div>
-                    </div>
-                    <div class="we-do__items">
-                        <a href="javascript:;" class="we-do__item">
-                            <span class="we-do__num">01</span>
-                            <span class="we-do__name">Проекты</span>
-                        </a>
-                        <a href="javascript:;" class="we-do__item">
-                            <span class="we-do__num">02</span>
-                            <span class="we-do__name">Монтаж</span>
-                        </a>
-                        <a href="javascript:;" class="we-do__item">
-                            <span class="we-do__num">03</span>
-                            <span class="we-do__name">Замеры</span>
-                        </a>
-                        <a href="javascript:;" class="we-do__item">
-                            <span class="we-do__num">04</span>
-                            <span class="we-do__name">Поставку</span>
-                        </a>
-                        <a href="javascript:;" class="we-do__item">
-                            <span class="we-do__num">05</span>
-                            <span class="we-do__name">Техническое обслуживание</span>
-                        </a>
+                <div class="col-lg-5 col-xl-6"></div>
+                <div class="col-lg-7 col-xl-6">
+                    <div class="we-do__block">
+                        <div class="we-do__title">
+                            <div class="h2">Что мы делаем</div>
+                        </div>
+                        <div class="we-do__items">
+                            <a href="javascript:;" class="we-do__item">
+                                <span class="we-do__num">01</span>
+                                <span class="we-do__name">Проекты</span>
+                            </a>
+                            <a href="javascript:;" class="we-do__item">
+                                <span class="we-do__num">02</span>
+                                <span class="we-do__name">Монтаж</span>
+                            </a>
+                            <a href="javascript:;" class="we-do__item">
+                                <span class="we-do__num">03</span>
+                                <span class="we-do__name">Замеры</span>
+                            </a>
+                            <a href="javascript:;" class="we-do__item">
+                                <span class="we-do__num">04</span>
+                                <span class="we-do__name">Поставку</span>
+                            </a>
+                            <a href="javascript:;" class="we-do__item">
+                                <span class="we-do__num">05</span>
+                                <span class="we-do__name">Техническое обслуживание</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -443,7 +509,7 @@
     <div class="map-block">
         <div class="container">
             <div class="map-block__inner">
-                <img src="local/uploads/map.jpg" alt="">
+                <div id="map" class="map-block__map"></div>
             </div>
         </div>
     </div>

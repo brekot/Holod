@@ -54,7 +54,11 @@ $(function() {
 		slidesPerView: 3,
 		spaceBetween: 30,
 		breakpoints: {
-			320: {
+			767: {
+                slidesPerView: 2,
+                spaceBetween: 20
+			},
+			575: {
                 slidesPerView: 1,
                 spaceBetween: 20
 			},
@@ -86,8 +90,39 @@ $(function() {
 		},
     });
 
+    /* - - - Открытие главного меню - - - */
     $('.menu-top-btn').click(function(){
 
         $('.header-main').toggleClass('header-main_open');
     });
+
+    /* - - - Карты - - - */
+    ymaps.ready(init);   
+
+    function init() {
+
+        var myMap = new ymaps.Map("map", {
+            center: [55.794760, 37.698771],
+            zoom: 16,
+            controls: []
+        });
+
+        var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+           // hintContent: 'Собственный значок метки',
+           // balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: '/local/img/map.point.svg',
+            // Размеры метки.
+            iconImageSize: [122, 124],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-63, -104]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
 });

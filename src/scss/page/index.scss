@@ -419,12 +419,243 @@
     }
 }
 
+// Расчет
+.calc-block {
+    padding: 90px 0 0;
+    position: relative;
+    z-index: 2;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+    }
+    &:before {
+        background: url(../img/calc.ice.top.png) no-repeat 50%;
+        width: 245px;
+        height: 247px;
+        top: -85px;
+        right: 0;
+    }
+    &:after {
+        background: url(../img/calc.ice.bottom.png) no-repeat 50%;
+        width: 332px;
+        height: 333px;
+        bottom: -195px;
+        left: 0;
+    }
+    &__text {
+        max-width: 580px;
+    }
+    &__title {
+        position: relative;
+        margin: 0 0 100px;
+
+        &:after {
+            content: "";
+            width: 80px;
+            height: 2px;
+            background-color: var(--azure);
+            position: absolute;
+            bottom: -45px;
+            left: 0;
+        }
+    }
+}
+
+@include media-breakpoint-only(xl)
+{
+    .calc-block__one-ice {
+        background: url(../img/calc.one.ice.jpg) no-repeat 50%;
+        position: absolute;
+        width: 76px;
+        height: 77px;
+        z-index: 2;
+        bottom: 78px;
+        left: 430px;
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .calc-block {
+        padding: 40px 0 0;
+
+        &:after,
+        &:before {
+            display: none;
+        }
+        &__title {
+            margin: 0 0 60px;
+
+            &::after {
+                bottom: -30px;
+            }
+        }
+    }
+}
+
+.calc-box {
+    background: url(../img/bg.calc.jpg) no-repeat right bottom / cover, linear-gradient(133deg, var(--light-blue-num1), var(--light-blue-num2));
+    padding: 55px 45px 65px 55px;
+    border-radius: 12px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 30px;
+    }
+    &__line {
+        border-bottom: solid 1px var(--blue-num2);
+        padding: 0 0 40px;
+        margin: 0 0 40px;
+    }
+    &__price {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .calc-box {
+        padding: 55px 35px 65px;
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .calc-box {
+        margin: 40px 0 0;
+        padding: 25px 20px;
+
+        &__title {
+            margin: 0 0 20px;
+        }
+        &__line {
+            padding: 0;
+            margin: 0 0 20px;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .calc-box {
+
+        &__price {
+            margin: 0 0 20px;
+            display: block;
+        }
+    }
+}
+
+.form-style-two {
+
+    &__text {
+        height: 56px;
+        border-radius: 4px;
+        border: solid 1px var(--blue-num2);
+        background-color: var(--white);
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--blue-num5);
+        padding: 0 20px;
+        width: 100%;
+
+        &-label {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
+            color: var(--gray-num1);
+            margin: 0 0 10px;
+        }
+    }
+    &__radio {
+        position: relative;
+
+        &-label {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--blue-num5);
+            margin: 0;
+            vertical-align: middle;
+            padding: 0 0 0 45px;
+            cursor: pointer;
+
+            &:before {
+                width: 24px;
+                height: 24px;
+                border: 1px solid var(--blue-num2);
+                background-color: var(--white);
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 50%;
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+        &-input {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            top: 0;
+
+            &:checked + .form-style-two__radio-label:before {
+                background: var(--azure) url(../img/icon.check.svg) no-repeat center;
+                border-color: var(--azure);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg)
+{
+    .form-style-two {
+
+        &__radio {
+
+            &:not(:last-child) {
+                margin: 0 60px 0 0;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .form-style-two {
+
+        &__text {
+            margin: 0 0 20px;
+        }
+        &__radio {
+            margin: 0 45px 20px 0;
+        }
+    }
+}
+
 // Что мы делаем
 .we-do {
     background: url(../img/bg.ice.one.png) no-repeat bottom left;
     height: 830px;
     padding: 115px 0 0;
+    position: relative;
 
+    &:before {
+        background: url(../img/we.do.frost.jpg) no-repeat 50%;
+        width: 815px;
+        height: 632px;
+        top: -280px;
+        right: 0;
+        content: "";
+        position: absolute;
+        z-index: 1;
+    }
+    &__block {
+        position: relative;
+        z-index: 2;
+    }
     &__title {
         position: relative;
         margin: 0 0 120px;
@@ -446,12 +677,6 @@
         display: block;
         max-width: 300px;
         margin: 0 0 50px;
-
-        &:nth-child(2n) {
-            position: absolute;
-            left: 330px;
-            margin: -70px 0 0;
-        }
     }
     &__num {
         font-size: 20px;
@@ -463,8 +688,8 @@
     &__name {
         font-size: 42px;
         font-weight: 700;
-        color: #5a739f;
-        border-bottom: 1px dashed #5a739f;
+        color: var(--blue-num5);
+        border-bottom: 1px dashed var(--blue-num5);
         padding: 0 0 5px;
         line-height: 50px;
         display: inline-block;
@@ -477,9 +702,63 @@
     }
 }
 
+@include media-breakpoint-up(lg)
+{
+   .we-do {
+
+        &__item {
+
+            &:nth-child(2n) {
+                position: absolute;
+                left: 330px;
+                margin: -70px 0 0;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .we-do {
+        padding: 50px 0 0;
+        background: none;
+        height: auto;
+
+        &:before {
+            display: none;
+        }
+        &__title {
+            margin: 0 0 60px;
+
+            &:after {
+                bottom: -30px;
+            }
+        }
+        &__items {
+            overflow: hidden;
+        }
+        &__item {
+            max-width: 50%;
+            margin: 0 0 30px;
+            float: left;
+            width: 50%;
+        }
+        &__name {
+            font-size: 30px;
+            line-height: normal;
+        }
+        &__item:last-child {
+            margin: 0 0 40px;
+
+            .we-do__name {
+                max-width: 215px;
+            }
+        }
+    }
+}
+
 // Отзывы клиентов
 .review-block {
-    background: url(../img/bg.ice.two.png) no-repeat 0 0, #e2f2ff url(../img/bg.review.jpg) no-repeat center / cover;
+    background: url(../img/bg.ice.two.png) no-repeat 0 0, var(--blue-num2) url(../img/bg.review.jpg) no-repeat center / cover;
     height: 789px;
     position: relative;
     z-index: 2;
@@ -509,10 +788,50 @@
         display: block;
         padding: 15px;
         transition: box-shadow .3s linear;
+        text-align: center;
 
         &:hover {
             box-shadow: 0 0 30px rgba(0, 0, 0, .15);
         }
+    }
+}
+
+@include media-breakpoint-only(lg)
+{
+    .review-block {
+
+        &__title {
+            padding: 0 150px;
+        }
+        &__center {
+            padding: 0 0 0 150px;
+        }
+    }
+}
+@include media-breakpoint-down(md)
+{
+    .review-block {
+        background: var(--blue-num2) url(../img/bg.review.jpg) no-repeat center / cover;
+        height: auto;
+
+        &__header {
+            padding: 35px 0 0;
+        }
+        &__title {
+            padding: 0;
+        }
+        &__center {
+            padding: 0;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .review-block__items {
+        overflow: visible;
+        padding: 30px 0;
+        width: calc(100% - 65px);
+        margin: 0;
     }
 }
 
@@ -820,5 +1139,19 @@
     &__inner {
         border-radius: 12px;
         overflow: hidden;
+    }
+    &__map {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+@include media-breakpoint-down(md)
+{
+    .map-block {
+
+        &__map {
+            height: 320px;
+        }
     }
 }
