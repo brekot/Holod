@@ -75,7 +75,8 @@
         color: var(--blue-num3);
         margin: 0 0 0 15px;
 
-        &_active {
+        &_active,
+        &_active:hover {
             border-radius: 15px;
             background-color: var(--azure);
             padding: 0 13px;

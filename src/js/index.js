@@ -1,11 +1,12 @@
 import $ from "jquery";
-//import popper from "popper.js";
 import bootstrap from "bootstrap";
 import Swiper from 'swiper';
 
 window.jQuery = $;
 window.$ = $;
 require('@fancyapps/fancybox');
+
+import './jquery.maskedinput.min.js';
 
 $(function() {
 
@@ -96,8 +97,31 @@ $(function() {
         $('.header-main').toggleClass('header-main_open');
     });
 
-    /* - - - Карты - - - */
-    ymaps.ready(init);   
+    /* - - - Ввод только чисел в input - - - */
+	$('.only-number').keypress(function(event){
+
+		event = event || window.event;
+
+		if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57)) return false;
+	});
+
+    /* - - - Маска для телефона - - - */
+	$(".phone-mask").mask("+7 ( 999 ) 999 99 99");
+
+    /* - - - Прокрутка к элементу - - - */
+	$(".scrool-to").click(function() {
+
+		$('html, body').animate({
+
+			scrollTop: $($(this).attr('href')).offset().top
+
+		}, 1000);
+
+		return false;
+	});
+
+    /* - - - Карта - - - */
+    ymaps.ready(init);
 
     function init() {
 
@@ -125,4 +149,22 @@ $(function() {
 
         myMap.geoObjects.add(myPlacemark);
     }
+
+    /* - - - Подгрузка товаров - - - */
+    $('body').delegate('#show-more', 'click', function(){
+
+        $.ajax({
+            url: '/ajax.html',
+            success: function(html){
+
+                var elem = $('#ajax-set-plase');
+
+                var parentElem = $(elem).parent();
+
+                $(elem).remove();
+
+                $(parentElem).append(html);
+            }
+        });
+    });
 });

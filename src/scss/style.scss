@@ -173,7 +173,7 @@
             display: block;
             position: absolute;
             padding: 0;
-            top: 50%;
+            top: 55%;
             left: 0;
             transform: translate(0, -50%);
             right: 0;
@@ -182,7 +182,7 @@
             &__link {
                 display: block;
                 text-align: center;
-                margin: 55px 0;
+                margin: 25px 0;
                 max-width: 100%;
             }
         }
@@ -203,7 +203,7 @@
             position: fixed;
             left: 50%;
             transform: translate(-50%, 0);
-            bottom: 85px;
+            bottom: 55px;
 
             &-link {
                 display: inline-block;
@@ -444,17 +444,23 @@
 {
     .modal-custom {
 
+        &__logo {
+
+            &-block {
+                top: 25px;
+            }
+        }
         &__header {
-            padding: 0 10px;
+            padding: 50px 10px 0;
         }
         &__close {
             height: 42px;
             width: 42px;
             right: 10px;
-            top: -90px;
+            top: -50px;
         }
         &__body {
-            padding: 20px 10px 0;
+            padding: 10px 10px 0;
         }
     }
 }
@@ -501,6 +507,24 @@
 
         &__btn-block {
             margin: 5px 0 0;
+        }
+    }
+}
+@include media-breakpoint-only(xs)
+{
+    .form-style {
+
+        &__line {
+            padding: 0 0 10px;
+        }
+        &__text {
+            height: 46px;
+            padding: 0 15px;
+        }
+        &__textarea {
+            padding: 15px;
+            height: 112px;
+            resize: none;
         }
     }
 }
