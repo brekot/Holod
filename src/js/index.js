@@ -111,6 +111,8 @@ $(function() {
     /* - - - Прокрутка к элементу - - - */
 	$(".scrool-to").click(function() {
 
+        $('.header-main').removeClass('header-main_open');
+
 		$('html, body').animate({
 
 			scrollTop: $($(this).attr('href')).offset().top
