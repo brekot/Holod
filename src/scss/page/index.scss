@@ -332,6 +332,7 @@
     &__inner {
         padding: 0 0 0 220px;
         position: relative;
+        z-index: 2;
     }
     &__desc {
         padding: 50px 0 70px;
@@ -1154,4 +1155,15 @@
             height: 320px;
         }
     }
+}
+
+// Снег
+canvas {
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
