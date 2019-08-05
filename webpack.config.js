@@ -11,13 +11,18 @@ function generateHtmlPlugins(templateDir)
     const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
 
     return templateFiles.map(item => {
+
         const parts = item.split(".");
         const name = parts[0];
         const extension = parts[1];
+
         return new HtmlWebpackPlugin({
             filename: `${name}.html`,
             template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-            inject: false
+            inject: 'body',
+            favicon: 'src/favicon.ico',
+            hash: true,
+            minify: true
         });
     });
 }
@@ -92,7 +97,7 @@ const config = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "./local/css/styles.css"
+            filename: "./local/template_styles.css"
         }),
         new CopyWebpackPlugin([
             {

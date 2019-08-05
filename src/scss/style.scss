@@ -50,7 +50,7 @@
 		position: relative;
 
 		&:before {
-			background: url(../img/icon.phone.svg) no-repeat 50%;
+			background: url(/local/img/icon.phone.svg) no-repeat 50%;
 			width: 12px;
 			height: 15px;
 			position: absolute;
@@ -167,7 +167,7 @@
     .header-main_open {
         position: fixed;
         bottom: 0;
-        background: transparent url('../img/bg.modal.jpg') no-repeat center left / cover;
+        background: transparent url('/local/img/bg.modal.jpg') no-repeat center left / cover;
 
         & .menu-top {
             display: block;
@@ -228,7 +228,7 @@
                 margin: 0 7px;
 
                 &:after {
-                    background: url(../img/icon.vk.svg) no-repeat 50%;
+                    background: url(/local/img/icon.vk.svg) no-repeat 50%;
                     width: 24px;
                     height: 13px;
                 }
@@ -237,7 +237,7 @@
                 margin: 0 7px;
 
                 &:after {
-                    background: url(../img/icon.ig.svg) no-repeat 50%;
+                    background: url(/local/img/icon.ig.svg) no-repeat 50%;
                     width: 24px;
                     height: 24px;
                 }
@@ -312,7 +312,7 @@
 		&-vk {
 
 			&:after {
-				background: url(../img/icon.vk.svg) no-repeat 50%;
+				background: url(/local/img/icon.vk.svg) no-repeat 50%;
 				width: 24px;
 				height: 13px;
 			}
@@ -321,7 +321,7 @@
 			margin: 0 0 0 15px;
 
 			&:after {
-				background: url(../img/icon.ig.svg) no-repeat 50%;
+				background: url(/local/img/icon.ig.svg) no-repeat 50%;
 				width: 24px;
 				height: 24px;
 			}
@@ -392,7 +392,7 @@
 
 // Модальное окно
 .modal-custom {
-    background: transparent url('../img/bg.modal.jpg') no-repeat center right / cover;
+    background: transparent url('/local/img/bg.modal.jpg') no-repeat center right / cover;
 
     &__content {
         background-color: transparent;
@@ -402,7 +402,7 @@
         border: none;
     }
     &__close {
-        background: transparent url(../img/icon.close.svg) no-repeat 50%/cover;
+        background: transparent url(/local/img/icon.close.svg) no-repeat 50%/cover;
         height: 64px;
         width: 64px;
         border: none;
