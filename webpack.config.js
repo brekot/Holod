@@ -32,6 +32,7 @@ const htmlPlugins = generateHtmlPlugins("./src/html/views");
 const config = {
     entry: ["./src/js/index.js", "./src/scss/style.scss"],
     output: {
+		path: path.resolve(__dirname, "./docs"),
         filename: "./local/js/script.js"
     },
     //devtool: "source-map", // - создавать ли карту CSS и JS

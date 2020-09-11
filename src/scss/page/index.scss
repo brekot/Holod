@@ -1,12 +1,12 @@
 // Главный экран
 .main-slider {
-	background: url(/local/img/bg.main.slider.jpg) no-repeat 50% / cover;
+	background: url(img/bg.main.slider.jpg) no-repeat 50% / cover;
 	height: 900px;
 	padding: 227px 0 0;
 	position: relative;
 
 	&:after {
-		background: url(/local/img/main.slider.ice.png) no-repeat 50%;
+		background: url(img/main.slider.ice.png) no-repeat 50%;
 		content: "";
 		width: 278px;
 		height: 274px;
@@ -57,7 +57,7 @@
 		cursor: pointer;
 
 		&:after {
-			background: url(/local/img/str.down.svg) no-repeat 50%;
+			background: url(img/str.down.svg) no-repeat 50%;
 			content: "";
 			width: 13px;
 			height: 6px;
@@ -305,12 +305,12 @@
 
 // Блок Камеры для складов
 .info-block {
-    background: url(/local/img/bg.info.jpg) no-repeat center top / cover;
+    background: url(img/bg.info.jpg) no-repeat center top / cover;
     padding: 190px 0 140px;
     position: relative;
 
     &:before {
-        background: url(/local/img/info.ice.top.png) no-repeat 50%;
+        background: url(img/info.ice.top.png) no-repeat 50%;
         content: "";
         width: 272px;
         height: 405px;
@@ -320,7 +320,7 @@
         right: 0;
     }
     &:after {
-        background: url(/local/img/info.ice.bottom.png) no-repeat 50%;
+        background: url(img/info.ice.bottom.png) no-repeat 50%;
         content: "";
         width: 148px;
         height: 157px;
@@ -433,14 +433,14 @@
         z-index: 2;
     }
     &:before {
-        background: url(/local/img/calc.ice.top.png) no-repeat 50%;
+        background: url(img/calc.ice.top.png) no-repeat 50%;
         width: 245px;
         height: 247px;
         top: -85px;
         right: 0;
     }
     &:after {
-        background: url(/local/img/calc.ice.bottom.png) no-repeat 50%;
+        background: url(img/calc.ice.bottom.png) no-repeat 50%;
         width: 332px;
         height: 333px;
         bottom: -195px;
@@ -468,7 +468,7 @@
 @include media-breakpoint-only(xl)
 {
     .calc-block__one-ice {
-        background: url(/local/img/calc.one.ice.jpg) no-repeat 50%;
+        background: url(img/calc.one.ice.jpg) no-repeat 50%;
         position: absolute;
         width: 76px;
         height: 77px;
@@ -497,7 +497,7 @@
 }
 
 .calc-box {
-    background: url(/local/img/bg.calc.jpg) no-repeat right bottom / cover, linear-gradient(133deg, var(--light-blue-num1), var(--light-blue-num2));
+    background: url(img/bg.calc.jpg) no-repeat right bottom / cover, linear-gradient(133deg, var(--light-blue-num1), var(--light-blue-num2));
     padding: 55px 45px 65px 55px;
     border-radius: 12px;
 
@@ -604,7 +604,7 @@
             top: 0;
 
             &:checked + .form-style-two__radio-label:before {
-                background: var(--azure) url(/local/img/icon.check.svg) no-repeat center;
+                background: var(--azure) url(img/icon.check.svg) no-repeat center;
                 border-color: var(--azure);
             }
         }
@@ -638,13 +638,13 @@
 
 // Что мы делаем
 .we-do {
-    background: url(/local/img/bg.ice.one.png) no-repeat bottom left;
+    background: url(img/bg.ice.one.png) no-repeat bottom left;
     height: 830px;
     padding: 115px 0 0;
     position: relative;
 
     &:before {
-        background: url(/local/img/we.do.frost.jpg) no-repeat 50%;
+        background: url(img/we.do.frost.jpg) no-repeat 50%;
         width: 815px;
         height: 632px;
         top: -280px;
@@ -759,7 +759,7 @@
 
 // Отзывы клиентов
 .review-block {
-    background: url(/local/img/bg.ice.two.png) no-repeat 0 0, var(--blue-num2) url(/local/img/bg.review.jpg) no-repeat center / cover;
+    background: url(img/bg.ice.two.png) no-repeat 0 0, var(--blue-num2) url(img/bg.review.jpg) no-repeat center / cover;
     height: 789px;
     position: relative;
     z-index: 2;
@@ -812,7 +812,7 @@
 @include media-breakpoint-down(md)
 {
     .review-block {
-        background: var(--blue-num2) url(/local/img/bg.review.jpg) no-repeat center / cover;
+        background: var(--blue-num2) url(img/bg.review.jpg) no-repeat center / cover;
         height: auto;
 
         &__header {
@@ -843,7 +843,7 @@
 
 	&__header {
 		padding: 100px 0 70px;
-        background: url(/local/img/bg.our.work.jpg) no-repeat top left;
+        background: url(img/bg.our.work.jpg) no-repeat top left;
 	}
 	&__title {
 		padding: 0 230px 0 220px;
@@ -918,7 +918,7 @@
     position: relative;
 
     &:before {
-        background: url(/local/img/doc.ice.top.png) no-repeat 50%;
+        background: url(img/doc.ice.top.png) no-repeat 50%;
         content: "";
         position: absolute;
         z-index: 2;
@@ -928,7 +928,7 @@
         left: 0;
     }
     &:after {
-        background: url(/local/img/doc.ice.bottom.png) no-repeat 50%;
+        background: url(img/doc.ice.bottom.png) no-repeat 50%;
         content: "";
         position: absolute;
         z-index: 2;
@@ -1076,7 +1076,7 @@
         color: var(--blue-num3);
     }
     &__icon-phone {
-        background: url(/local/img/icon.phone.svg) no-repeat 50%;
+        background: url(img/icon.phone.svg) no-repeat 50%;
         width: 12px;
         height: 15px;
         position: absolute;
@@ -1084,7 +1084,7 @@
         left: 0;
     }
     &__icon-email {
-        background: url(/local/img/icon.email.svg) no-repeat 50%;
+        background: url(img/icon.email.svg) no-repeat 50%;
         width: 19px;
         height: 14px;
         position: absolute;
@@ -1092,7 +1092,7 @@
         left: 0;
     }
     &__icon-point {
-        background: url(/local/img/icon.point.svg) no-repeat 50%;
+        background: url(img/icon.point.svg) no-repeat 50%;
         width: 12px;
         height: 16px;
         position: absolute;

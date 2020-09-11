@@ -141,7 +141,7 @@
     text-align: left;
 
     &:before {
-        background: url(/local/img/str.prev.svg) no-repeat center left;
+        background: url(img/str.prev.svg) no-repeat center left;
     }
 }
 .str-next {
@@ -149,7 +149,7 @@
     text-align: right;
 
     &:before {
-        background: url(/local/img/str.next.svg) no-repeat center right;
+        background: url(img/str.next.svg) no-repeat center right;
     }
 }
 .str-disabled {
