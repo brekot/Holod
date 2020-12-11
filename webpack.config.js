@@ -35,7 +35,6 @@ const config = {
 		path: path.resolve(__dirname, "./docs"),
         filename: "./local/js/script.js"
     },
-    //devtool: "source-map", // - создавать ли карту CSS и JS
     mode: "production",
     optimization: {
         minimizer: [
